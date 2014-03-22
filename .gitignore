@@ -13,3 +13,15 @@ wp-content/backups/
 sitemap.xml.gz
 
 /node_modules/
+
+/assets/Example_Video.f4v
+/assets/Example_Video.mp4
+/assets/Example_Video.webm
+/assets/Non-example.video.f4v
+/assets/Non-example.video.mp4
+/assets/Non-example.video.webm
+/assets/Open.Chalkboard.Intro.Film.V1.f4v
+/assets/Open.Chalkboard.Intro.Film.V1.mp4
+/assets/Open.Chalkboard.Intro.Film.V1.webm
+
+/assets/PHYSICS_2__PETER_BAKER_VOICEOVER.wav
