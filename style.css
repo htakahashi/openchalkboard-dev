@@ -1228,3 +1228,43 @@ body#home #foot-rpt #foot-bkg {
 #bkg-modal-s div#module-content-s #surprising02 {
   display: block;
 }
+#bkg-modal-s div#module-content-s #surprising02 div#surprising02-bkg {
+  display: block;
+  background: url(img/surprising02-bkg.png) no-repeat;
+  height: 398px;
+}
+#bkg-modal-s div#module-content-s #surprising02 div#surprising02-bkg p.title {
+  font-size: 36px;
+  font-family: 'Sanchez';
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 42px;
+  font-weight: 600;
+}
+#bkg-modal-s div#module-content-s #surprising02 div#surprising02-bkg div#button1 {
+  display: block;
+  background-color: #ffffff;
+  opacity: .5;
+  width: 325px;
+  height: 81px;
+  margin-left: 168px;
+  margin-top: 50px;
+}
+#bkg-modal-s div#module-content-s #surprising02 div#surprising02-bkg button#mysteries-btn {
+  display: block;
+  background-color: #ffffff;
+  width: 325px;
+  height: 81px;
+  margin-left: 168px;
+  margin-top: -79px;
+  font-size: 49px;
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'bern_sans_ctregular';
+  letter-spacing: 6px;
+  padding-left: 85px;
+  background: url(img/magnifying-glass.png) no-repeat;
+  background-position: 16px 14px;
+}
