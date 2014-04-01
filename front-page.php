@@ -25,5 +25,5 @@
 			  </div><!-- /#main-content -->	  	
 	  	</div><!-- /#main-content-bkg -->
 	  </div><!-- /#main-content-rpt -->
-	  
+
 <?php get_footer(); ?>

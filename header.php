@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="utf-8">
   <title>OpenChalkboard</title>
   <link href="<?php bloginfo('stylesheet_url');?>" type="text/css" rel="stylesheet" />
+  <link href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" type="text/css" rel="stylesheet" />
  	<?php wp_head(); ?> 
 </head>
 <body id="home">
