@@ -344,17 +344,6 @@
 
   	</div><!-- /#module-content -->
 
-  	<div id="surprising">
-  		<div id="surprising01" class="slide active">
-	      	<video width="707" poster="<?php bloginfo('stylesheet_directory');?>/img/poster-overview-video.png" controls>
-				<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/Open.Chalkboard.Intro.Film.V1.webm" type="video/webm">
-				<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/Open.Chalkboard.Intro.Film.V1.mp4" type="video/mp4">
-				<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/Open.Chalkboard.Intro.Film.V1.f4v" type="video/f4v">
-				This video is best viewed in Chrome.
-	      	</video> 
-		</div><!-- /#surprising01 -->
-  	</div><!-- surprising module content -->
-
   	<ul id="progress-welcome">
   		<li class="overview-video">Briefing <span>30 Sec.</span></li>
   		<li class="text-top">+</li>
@@ -891,15 +880,13 @@
 			</div>
 
 	  	<ul id="progress-surprising">
-	  		<li class="overview-video">Briefing <span>30 Sec.</span></li>
+	  		<li class="overview-video">Briefing <span>30 SEC.</span></li>
 	  		<li class="text-top">+</li>
-	  		<li class="explore-assumptions">Diagnostic 1 <span>15 Sec.</span></li>
+	  		<li class="explore-assumptions">Tactic 1 <span>3 MIN.</span></li>
 	  		<li class="text-top">+</li>
-	  		<li>Diagnostic 2<span>1 Min.</span></li>
-	  		<li class="text-top">+</li>
-	  		<li>Diagnostic 3<span>15 Sec.</span></li>
+	  		<li>Tactic 2<span>3 MIN.</span></li>
 	  		<li class="text-top">=</li>
-	  		<li class="gameplan">Your Custom GamePlan</li>
+	  		<li class="equals">EQUIPPED TO IMPLEMENT</li>
 	  	</ul>
 
 	  </div><!-- /#modal-surprising --> 

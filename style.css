@@ -1222,3 +1222,9 @@ body#home #foot-rpt #foot-bkg {
   height: 398px;
   margin: 47px 0 0 58px;
 }
+#bkg-modal-s div#module-content-s #surprising01 {
+  display: none;
+}
+#bkg-modal-s div#module-content-s #surprising02 {
+  display: block;
+}
