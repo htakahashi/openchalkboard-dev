@@ -877,6 +877,14 @@
 						This video is best viewed in Chrome.
 		      </video> 
 				</div><!-- /#surprising01 -->
+
+				<div id="surprising02" class="slide active">
+					<div id="surprising02-bkg">
+						<p class="title">Click which tactic<br />you want to learn first:</p>
+						<div id="button1"></div>
+			      <button id="mysteries-btn" type="button">Mysteries</button>
+					</div>
+				</div><!-- /#surprising02 -->
 			</div>
 
 	  	<ul id="progress-surprising">
