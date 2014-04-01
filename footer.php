@@ -869,6 +869,43 @@
 
     
   </script>
+
+	<div id="bkg-modal-s">  
+	  <div id="modal-suprising">
+
+	  	<h2>Getting SURPRISING</h2>
+	  	<a id="btn-close-s">Close</a>
+	  	<a id="btn-previous-s">Previous</a>
+	  	<a id="btn-next-s">Next</a>
+	  	
+	  	<div id="module-content-s">
+	  
+	  		<div id="surprising01" class="slide active">
+		      <video width="707" poster="<?php bloginfo('stylesheet_directory');?>/img/poster-overview-video.png" controls>
+						<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/Open.Chalkboard.Intro.Film.V1.webm" type="video/webm">
+						<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/Open.Chalkboard.Intro.Film.V1.mp4" type="video/mp4">
+						<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/Open.Chalkboard.Intro.Film.V1.f4v" type="video/f4v">
+						This video is best viewed in Chrome.
+		      </video> 
+				</div><!-- /#surprising01 -->
+			</div>
+
+	  	<ul id="progress-surprising">
+	  		<li class="overview-video">Briefing <span>30 Sec.</span></li>
+	  		<li class="text-top">+</li>
+	  		<li class="explore-assumptions">Diagnostic 1 <span>15 Sec.</span></li>
+	  		<li class="text-top">+</li>
+	  		<li>Diagnostic 2<span>1 Min.</span></li>
+	  		<li class="text-top">+</li>
+	  		<li>Diagnostic 3<span>15 Sec.</span></li>
+	  		<li class="text-top">=</li>
+	  		<li class="gameplan">Your Custom GamePlan</li>
+	  	</ul>
+
+	  </div><!-- /#modal-surprising --> 
+	</div><!-- /#bkg-modal-s -->
+
+	
   <?php wp_footer(); ?>
 </body>
 </html>
