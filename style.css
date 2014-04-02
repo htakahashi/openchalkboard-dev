@@ -1226,7 +1226,7 @@ body#home #foot-rpt #foot-bkg {
   display: none;
 }
 #bkg-modal-s div#module-content-s #surprising02 {
-  display: block;
+  display: none;
 }
 #bkg-modal-s div#module-content-s #surprising02 div#surprising02-bkg {
   display: block;
@@ -1242,22 +1242,12 @@ body#home #foot-rpt #foot-bkg {
   padding-top: 42px;
   font-weight: 600;
 }
-#bkg-modal-s div#module-content-s #surprising02 div#surprising02-bkg div#button1 {
+#bkg-modal-s div#module-content-s #surprising02 div#surprising02-bkg button#mysteries-btn {
   display: block;
-  background-color: #ffffff;
-  opacity: .5;
   width: 325px;
   height: 81px;
   margin-left: 168px;
   margin-top: 50px;
-}
-#bkg-modal-s div#module-content-s #surprising02 div#surprising02-bkg button#mysteries-btn {
-  display: block;
-  background-color: #ffffff;
-  width: 325px;
-  height: 81px;
-  margin-left: 168px;
-  margin-top: -79px;
   font-size: 49px;
   border: none;
   color: #ffffff;
@@ -1265,6 +1255,377 @@ body#home #foot-rpt #foot-bkg {
   font-family: 'bern_sans_ctregular';
   letter-spacing: 6px;
   padding-left: 85px;
-  background: url(img/magnifying-glass.png) no-repeat;
-  background-position: 16px 14px;
+  cursor: pointer;
+  background: url(img/magnifying-glass.png) 16px 14px no-repeat rgba(255, 255, 255, 0.5);
+}
+#bkg-modal-s div#module-content-s #surprising02 div#surprising02-bkg button#mysteries-btn:hover {
+  background: url(img/magnifying-glass.png) 16px 14px no-repeat #ffca00;
+}
+#bkg-modal-s div#module-content-s #surprising02 div#surprising02-bkg button#unexpected-btn {
+  display: block;
+  width: 441px;
+  height: 81px;
+  margin-left: 168px;
+  margin-top: 30px;
+  font-size: 49px;
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'bern_sans_ctregular';
+  letter-spacing: 6px;
+  padding-left: 85px;
+  cursor: pointer;
+  background: url(img/white-spark.png) 16px 9px no-repeat rgba(255, 255, 255, 0.5);
+}
+#bkg-modal-s div#module-content-s #surprising02 div#surprising02-bkg button#unexpected-btn:hover {
+  background: url(img/white-spark.png) 16px 9px no-repeat #ffca00;
+}
+#bkg-modal-s div#module-content-s #surprising03 {
+  display: none;
+}
+#bkg-modal-s div#module-content-s #surprising04 {
+  display: none;
+}
+#bkg-modal-s div#module-content-s #surprising04 div#surprising04-bkg {
+  display: block;
+  background: url(img/surprising04-bkg.png) no-repeat;
+  height: 398px;
+}
+#bkg-modal-s div#module-content-s #surprising04 div#surprising04-bkg p.title {
+  font-size: 22px;
+  font-family: 'Sanchez';
+  color: #ffffff;
+  text-align: center;
+  padding-top: 24px;
+}
+#bkg-modal-s div#module-content-s #surprising04 div#surprising04-bkg button {
+  display: block;
+  border: none;
+  cursor: pointer;
+}
+#bkg-modal-s div#module-content-s #surprising04 div#surprising04-bkg button#details-clues-btn {
+  width: 120px;
+  height: 120px;
+  margin: 4px 0 0 41px;
+  background: url(img/detailsClues.png) no-repeat;
+}
+#bkg-modal-s div#module-content-s #surprising04 div#surprising04-bkg button#details-clues-btn:hover {
+  background: url(img/detailsCluesYellow.png) no-repeat;
+}
+#bkg-modal-s div#module-content-s #surprising04 div#surprising04-bkg div#yellow-circle {
+  display: none;
+  position: absolute;
+  background: url(img/yellowCircle.png) no-repeat;
+  width: 264px;
+  height: 264px;
+  margin: -86px 0 0 231px;
+}
+#bkg-modal-s div#module-content-s #surprising04 div#surprising04-bkg div#yellow-circle p {
+  position: absolute;
+  font-family: 'Sanchez';
+  font-size: 14px;
+  color: #002940;
+  margin: 61px 0 0 46px;
+  width: 182px;
+}
+#bkg-modal-s div#module-content-s #surprising04 div#surprising04-bkg button#details-clues-btn:hover + div#yellow-circle {
+  display: block;
+  background: url(img/yellowCircle.png) no-repeat;
+}
+#bkg-modal-s div#module-content-s #surprising04 div#surprising04-bkg button#instant-relevancy-btn {
+  position: absolute;
+  width: 109px;
+  height: 109px;
+  margin: -107px 0 0 542px;
+  background: url(img/instantRelevancy.png) no-repeat;
+}
+#bkg-modal-s div#module-content-s #surprising04 div#surprising04-bkg button#instant-relevancy-btn:hover {
+  background: url(img/instantRelevancyYellow.png) no-repeat;
+}
+#bkg-modal-s div#module-content-s #surprising04 div#surprising04-bkg div#yellow-circle-b {
+  display: none;
+  position: absolute;
+  background: url(img/yellowCircle.png) no-repeat;
+  width: 264px;
+  height: 264px;
+  margin: -86px 0 0 231px;
+}
+#bkg-modal-s div#module-content-s #surprising04 div#surprising04-bkg div#yellow-circle-b p {
+  position: absolute;
+  font-family: 'Sanchez';
+  font-size: 14px;
+  color: #002940;
+  margin: 50px 0 0 49px;
+  width: 182px;
+}
+#bkg-modal-s div#module-content-s #surprising04 div#surprising04-bkg button#instant-relevancy-btn:hover + div#yellow-circle-b {
+  display: block;
+  background: url(img/yellowCircle.png) no-repeat;
+}
+#bkg-modal-s div#module-content-s #surprising04 div#surprising04-bkg button#deep-learning-btn {
+  position: absolute;
+  width: 106px;
+  height: 106px;
+  margin: 45px 0 0 71px;
+  background: url(img/deepLearning.png) no-repeat;
+}
+#bkg-modal-s div#module-content-s #surprising04 div#surprising04-bkg button#deep-learning-btn:hover {
+  background: url(img/deepLearningYellow.png) no-repeat;
+}
+#bkg-modal-s div#module-content-s #surprising04 div#surprising04-bkg div#yellow-circle-c {
+  display: none;
+  position: absolute;
+  background: url(img/yellowCircle.png) no-repeat;
+  width: 264px;
+  height: 264px;
+  margin: -86px 0 0 231px;
+}
+#bkg-modal-s div#module-content-s #surprising04 div#surprising04-bkg div#yellow-circle-c p {
+  position: absolute;
+  font-family: 'Sanchez';
+  font-size: 14px;
+  color: #002940;
+  margin: 48px 0 0 50px;
+  width: 190px;
+}
+#bkg-modal-s div#module-content-s #surprising04 div#surprising04-bkg button#deep-learning-btn:hover + div#yellow-circle-c {
+  display: block;
+  background: url(img/yellowCircle.png) no-repeat;
+}
+#bkg-modal-s div#module-content-s #surprising04 div#surprising04-bkg button#beats-bell-btn {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  margin: 50px 0 0 552px;
+  background: url(img/beatsBell.png) no-repeat;
+}
+#bkg-modal-s div#module-content-s #surprising04 div#surprising04-bkg button#beats-bell-btn:hover {
+  background: url(img/beatsBellYellow.png) no-repeat;
+}
+#bkg-modal-s div#module-content-s #surprising04 div#surprising04-bkg div#yellow-circle-d {
+  display: none;
+  position: absolute;
+  background: url(img/yellowCircle.png) no-repeat;
+  width: 264px;
+  height: 264px;
+  margin: -86px 0 0 231px;
+}
+#bkg-modal-s div#module-content-s #surprising04 div#surprising04-bkg div#yellow-circle-d p {
+  position: absolute;
+  font-family: 'Sanchez';
+  font-size: 14px;
+  color: #002940;
+  margin: 54px 0 0 41px;
+  width: 194px;
+}
+#bkg-modal-s div#module-content-s #surprising04 div#surprising04-bkg button#beats-bell-btn:hover + div#yellow-circle-d {
+  display: block;
+  background: url(img/yellowCircle.png) no-repeat;
+}
+#bkg-modal-s div#module-content-s #surprising08 {
+  display: block;
+}
+#bkg-modal-s div#module-content-s #surprising08 div#surprising08-bkg {
+  display: block;
+  background: url(img/surprising08-bkg.png) no-repeat;
+  height: 398px;
+}
+#bkg-modal-s div#module-content-s #surprising08 div#surprising08-bkg p.title {
+  font-size: 22px;
+  font-family: 'Sanchez';
+  color: #ffffff;
+  text-align: center;
+  padding-top: 24px;
+}
+#bkg-modal-s div#module-content-s #surprising08 div#surprising08-bkg button {
+  display: block;
+  border: none;
+  cursor: pointer;
+}
+#bkg-modal-s div#module-content-s #surprising08 div#surprising08-bkg button#jolts-btn {
+  width: 120px;
+  height: 120px;
+  margin: 27px 0 0 24px;
+  background: url(img/joltsInterest.png) no-repeat;
+}
+#bkg-modal-s div#module-content-s #surprising08 div#surprising08-bkg button#jolts-btn:hover {
+  background: url(img/joltsInterestYellow.png) no-repeat;
+}
+#bkg-modal-s div#module-content-s #surprising08 div#surprising08-bkg div#yellow-circle-1 {
+  display: none;
+  position: absolute;
+  background: url(img/yellowCircle.png) no-repeat;
+  width: 264px;
+  height: 264px;
+  margin: -109px 0 0 231px;
+}
+#bkg-modal-s div#module-content-s #surprising08 div#surprising08-bkg div#yellow-circle-1 p {
+  position: absolute;
+  font-family: 'Sanchez';
+  font-size: 14px;
+  color: #002940;
+  margin: 61px 0 0 46px;
+  width: 182px;
+}
+#bkg-modal-s div#module-content-s #surprising08 div#surprising08-bkg button#jolts-btn:hover + div#yellow-circle-1 {
+  display: block;
+  background: url(img/yellowCircle.png) no-repeat;
+}
+#bkg-modal-s div#module-content-s #surprising08 div#surprising08-bkg button#increase-btn {
+  position: absolute;
+  width: 109px;
+  height: 109px;
+  margin: -114px 0 0 541px;
+  background: url(img/increasesRecall.png) no-repeat;
+}
+#bkg-modal-s div#module-content-s #surprising08 div#surprising08-bkg button#increase-btn:hover {
+  background: url(img/increasesRecallYellow.png) no-repeat;
+}
+#bkg-modal-s div#module-content-s #surprising08 div#surprising08-bkg div#yellow-circle-2 {
+  display: none;
+  position: absolute;
+  background: url(img/yellowCircle.png) no-repeat;
+  width: 264px;
+  height: 264px;
+  margin: -109px 0 0 231px;
+}
+#bkg-modal-s div#module-content-s #surprising08 div#surprising08-bkg div#yellow-circle-2 p {
+  position: absolute;
+  font-family: 'Sanchez';
+  font-size: 14px;
+  color: #002940;
+  margin: 50px 0 0 49px;
+  width: 182px;
+}
+#bkg-modal-s div#module-content-s #surprising08 div#surprising08-bkg button#increase-btn:hover + div#yellow-circle-2 {
+  display: block;
+  background: url(img/yellowCircle.png) no-repeat;
+}
+#bkg-modal-s div#module-content-s #surprising08 div#surprising08-bkg button#accel-btn {
+  position: absolute;
+  width: 106px;
+  height: 106px;
+  margin: 35px 0 0 71px;
+  background: url(img/accelLearning.png) no-repeat;
+}
+#bkg-modal-s div#module-content-s #surprising08 div#surprising08-bkg button#accel-btn:hover {
+  background: url(img/accelLearningYellow.png) no-repeat;
+}
+#bkg-modal-s div#module-content-s #surprising08 div#surprising08-bkg div#yellow-circle-3 {
+  display: none;
+  position: absolute;
+  background: url(img/yellowCircle.png) no-repeat;
+  width: 264px;
+  height: 264px;
+  margin: -109px 0 0 231px;
+}
+#bkg-modal-s div#module-content-s #surprising08 div#surprising08-bkg div#yellow-circle-3 p {
+  position: absolute;
+  font-family: 'Sanchez';
+  font-size: 14px;
+  color: #002940;
+  margin: 48px 0 0 50px;
+  width: 190px;
+}
+#bkg-modal-s div#module-content-s #surprising08 div#surprising08-bkg button#accel-btn:hover + div#yellow-circle-3 {
+  display: block;
+  background: url(img/yellowCircle.png) no-repeat;
+}
+#bkg-modal-s div#module-content-s #surprising08 div#surprising08-bkg button#concepts-btn {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  margin: 36px 0 0 559px;
+  background: url(img/bringsConcepts.png) no-repeat;
+}
+#bkg-modal-s div#module-content-s #surprising08 div#surprising08-bkg button#concepts-btn:hover {
+  background: url(img/bringsConceptsYellow.png) no-repeat;
+}
+#bkg-modal-s div#module-content-s #surprising08 div#surprising08-bkg div#yellow-circle-4 {
+  display: none;
+  position: absolute;
+  background: url(img/yellowCircle.png) no-repeat;
+  width: 264px;
+  height: 264px;
+  margin: -109px 0 0 231px;
+}
+#bkg-modal-s div#module-content-s #surprising08 div#surprising08-bkg div#yellow-circle-4 p {
+  position: absolute;
+  font-family: 'Sanchez';
+  font-size: 14px;
+  color: #002940;
+  margin: 54px 0 0 41px;
+  width: 194px;
+}
+#bkg-modal-s div#module-content-s #surprising08 div#surprising08-bkg button#concepts-btn:hover + div#yellow-circle-4 {
+  display: block;
+  background: url(img/yellowCircle.png) no-repeat;
+}
+#bkg-modal-s div#module-content-s #surprising11 {
+  display: none;
+}
+#bkg-modal-s div#module-content-s #surprising11 div#surprising11-bkg {
+  display: block;
+  background: url(img/surprising02-bkg.png) no-repeat;
+  height: 398px;
+}
+#bkg-modal-s div#module-content-s #surprising11 div#surprising11-bkg p.title {
+  font-size: 30px;
+  font-family: 'Sanchez';
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 42px;
+  font-weight: 600;
+}
+#bkg-modal-s div#module-content-s #surprising11 div#surprising11-bkg button#goto-btn {
+  display: block;
+  width: 286px;
+  height: 60px;
+  margin: 47px auto 0 auto;
+  font-size: 36px;
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'bern_sans_ctregular';
+  letter-spacing: 2px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#bkg-modal-s div#module-content-s #surprising11 div#surprising11-bkg button#goto-btn:hover {
+  background-color: #ffca00;
+}
+#bkg-modal-s div#module-content-s #surprising11 div#surprising11-bkg button#signup-btn {
+  display: block;
+  width: 389px;
+  height: 60px;
+  margin: 12px auto 0 auto;
+  font-size: 36px;
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'bern_sans_ctregular';
+  letter-spacing: 2px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#bkg-modal-s div#module-content-s #surprising11 div#surprising11-bkg button#signup-btn:hover {
+  background-color: #ffca00;
+}
+#bkg-modal-s div#module-content-s #surprising11 div#surprising11-bkg button#share-btn {
+  display: block;
+  width: 362px;
+  height: 60px;
+  margin: 12px auto 0 auto;
+  font-size: 36px;
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'bern_sans_ctregular';
+  letter-spacing: 2px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#bkg-modal-s div#module-content-s #surprising11 div#surprising11-bkg button#share-btn:hover {
+  background-color: #ffca00;
 }
