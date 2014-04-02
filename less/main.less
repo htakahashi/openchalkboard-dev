@@ -1119,68 +1119,121 @@ body#home #foot-rpt #foot-bkg {
     padding-top: 12px;
   }
 
-div#module-content-s {
-  
-  .slide {
-    display: block;
-    width: 707px;
-    height: 398px;
-    margin: 47px 0 0 58px;
-  }
-
-  #surprising01 {
-    display: none;
-  }
-  #surprising02 {
-    display: block;
-
-    div#surprising02-bkg {
-      display: block;
-      background: url(img/surprising02-bkg.png) no-repeat;
-      height: 398px;
-      
-      p.title {
-        font-size: 36px;
-        font-family: 'Sanchez';
-        color: @black;
-        text-transform: uppercase;
-        text-align: center;
-        padding-top: 42px;
-        font-weight: 600;
-      }
-
-      div#button1 {
-        display: block;
-        background-color: @white;
-        opacity: .5;
-        width: 325px;
-        height: 81px;
-        margin-left: 168px;
-        margin-top: 50px;
-      }
-
-      button#mysteries-btn {
-        display: block;
-        background-color: @white;
-        width: 325px;
-        height: 81px;
-        
-        margin-left: 168px;
-        margin-top: -79px;
-        font-size: 49px;
-        border: none;
-        color: @white;
-        text-transform: uppercase;
-        font-family: 'bern_sans_ctregular';
-        letter-spacing: 6px;
-        padding-left: 85px;
-        background: url(img/magnifying-glass.png) no-repeat;
-        background-position: 16px 14px;
-      }
-    }
+  div#module-content-s {
     
-  }
+    .slide {
+      display: block;
+      width: 707px;
+      height: 398px;
+      margin: 47px 0 0 58px;
+    }
 
-}
+    #surprising01 {
+      display: none;
+    }//surprising01 
 
+    #surprising02 {
+      display: none;
+
+      div#surprising02-bkg {
+        display: block;
+        background: url(img/surprising02-bkg.png) no-repeat;
+        height: 398px;
+        
+        p.title {
+          font-size: 36px;
+          font-family: 'Sanchez';
+          color: @black;
+          text-transform: uppercase;
+          text-align: center;
+          padding-top: 42px;
+          font-weight: 600;
+        }
+
+        div#button1 {
+          display: block;
+          background-color: @white;
+          opacity: .5;
+          width: 325px;
+          height: 81px;
+          margin-left: 168px;
+          margin-top: 50px;
+        }
+
+        button#mysteries-btn {
+          display: block;
+          background-color: @white;
+          width: 325px;
+          height: 81px;
+          
+          margin-left: 168px;
+          margin-top: -79px;
+          font-size: 49px;
+          border: none;
+          color: @white;
+          text-transform: uppercase;
+          font-family: 'bern_sans_ctregular';
+          letter-spacing: 6px;
+          padding-left: 85px;
+          background: url(img/magnifying-glass.png) no-repeat;
+          background-position: 16px 14px;
+        }
+      }
+    }//surprising02 
+
+    #surprising06 {
+      display: block;
+
+      div#surprising06-bkg {
+        display: block;
+        background: url(img/bkg-blue-shapes-bg.jpg) no-repeat;
+        height: 398px;
+        position: relative;
+
+        a.example-cup {
+          display: block;
+          width: 251px;
+          height: 245px;
+          background: url(img/sprite-cup.png) no-repeat top;
+          position: absolute;
+          top: 118px;
+          left: 28px;
+        }
+
+        a.download-folder {
+          display: block;
+          width: 233px;
+          height: 193px;
+          background: url(img/sprite-folder.png) no-repeat top;
+          position: absolute;
+          top: 192px;
+          left: 253px;
+        }
+
+        a.research-folder {
+          display: block;
+          width: 130px;
+          height: 136px;
+          background: url(img/sprite-research.png) no-repeat top;
+          position: absolute;
+          top: 79px;
+          left: 346px;
+        }
+
+        a.think-tank {
+          display: block;
+          width: 130px;
+          height: 133px;
+          background: url(img/sprite-think-tank.png) no-repeat top;
+          position: absolute;
+          top: 108px;
+          left: 507px;
+        }
+
+        a:hover {
+          background-position: bottom;
+        }
+      }
+    }//surprising06
+  }//module-content-s
 }//#bkg-modal-s

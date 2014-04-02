@@ -885,6 +885,17 @@
 			      <button id="mysteries-btn" type="button">Mysteries</button>
 					</div>
 				</div><!-- /#surprising02 -->
+
+				<div id="surprising06" class="slide active">
+					<div id="surprising06-bkg">
+						
+						<a class="example-cup" href="#"></a>
+						<a class="download-folder" href="#"></a>
+						<a class="research-folder" href="#"></a>
+						<a class="think-tank" href="#"></a>
+
+					</div>
+				</div><!-- /#surprising06 -->
 			</div>
 
 	  	<ul id="progress-surprising">
