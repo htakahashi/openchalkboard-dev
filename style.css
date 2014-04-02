@@ -1629,3 +1629,51 @@ body#home #foot-rpt #foot-bkg {
 #bkg-modal-s div#module-content-s #surprising11 div#surprising11-bkg button#share-btn:hover {
   background-color: #ffca00;
 }
+#bkg-modal-s div#module-content-s #surprising06 {
+  display: block;
+}
+#bkg-modal-s div#module-content-s #surprising06 div#surprising06-bkg {
+  display: block;
+  background: url(img/bkg-blue-shapes-bg.jpg) no-repeat;
+  height: 398px;
+  position: relative;
+}
+#bkg-modal-s div#module-content-s #surprising06 div#surprising06-bkg a.example-cup {
+  display: block;
+  width: 251px;
+  height: 245px;
+  background: url(img/sprite-cup.png) no-repeat top;
+  position: absolute;
+  top: 118px;
+  left: 28px;
+}
+#bkg-modal-s div#module-content-s #surprising06 div#surprising06-bkg a.download-folder {
+  display: block;
+  width: 233px;
+  height: 193px;
+  background: url(img/sprite-folder.png) no-repeat top;
+  position: absolute;
+  top: 192px;
+  left: 253px;
+}
+#bkg-modal-s div#module-content-s #surprising06 div#surprising06-bkg a.research-folder {
+  display: block;
+  width: 130px;
+  height: 136px;
+  background: url(img/sprite-research.png) no-repeat top;
+  position: absolute;
+  top: 79px;
+  left: 346px;
+}
+#bkg-modal-s div#module-content-s #surprising06 div#surprising06-bkg a.think-tank {
+  display: block;
+  width: 130px;
+  height: 133px;
+  background: url(img/sprite-think-tank.png) no-repeat top;
+  position: absolute;
+  top: 108px;
+  left: 507px;
+}
+#bkg-modal-s div#module-content-s #surprising06 div#surprising06-bkg a:hover {
+  background-position: bottom;
+}
