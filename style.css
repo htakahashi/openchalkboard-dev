@@ -1313,7 +1313,7 @@ body#home #foot-rpt #foot-bkg {
   display: block;
 }
 #bkg-modal-s div#module-content-s #surprising01 {
-  display: block;
+  display: none;
 }
 #bkg-modal-s div#module-content-s #surprising02 div#surprising02-bkg {
   display: block;
@@ -1522,7 +1522,14 @@ body#home #foot-rpt #foot-bkg {
   display: none;
 }
 #bkg-modal-s div#module-content-s #surprising06 {
-  display: none;
+  display: block;
+}
+#bkg-modal-s div#module-content-s #surprising06 h2 {
+  font-size: 30px;
+  font-family: 'Sanchez';
+  text-align: center;
+  padding-top: 34px;
+  color: white;
 }
 #bkg-modal-s div#module-content-s #surprising06 div#surprising06-bkg {
   display: block;
@@ -1566,7 +1573,26 @@ body#home #foot-rpt #foot-bkg {
   top: 108px;
   left: 507px;
 }
+#bkg-modal-s div#module-content-s #surprising06 div#surprising06-bkg a.btn-tactic-1-mysteries-restart {
+  display: block;
+  width: 144px;
+  height: 67px;
+  background: url(img/btn-tactic-1-mysteries-restart.png) no-repeat top;
+  position: absolute;
+  top: 248px;
+  left: 507px;
+}
+#bkg-modal-s div#module-content-s #surprising06 div#surprising06-bkg a.btn-tactic-1-mysteries-finish {
+  display: block;
+  width: 145px;
+  height: 67px;
+  background: url(img/btn-tactic-1-mysteries-finish.png) no-repeat top;
+  position: absolute;
+  top: 305px;
+  left: 541px;
+}
 #bkg-modal-s div#module-content-s #surprising06 div#surprising06-bkg a:hover {
+  pointer: cursor;
   background-position: bottom;
 }
 #bkg-modal-s div#module-content-s #surprising07 {
