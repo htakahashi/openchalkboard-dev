@@ -953,14 +953,19 @@
 				</div><!-- /#surprising05 -->
 
 				<div id="surprising06" class="slide active">
-					<div id="surprising06-bkg">
-						
-						<a class="example-cup" href="#"></a>
-						<a class="download-folder" href="#"></a>
-						<a class="research-folder" href="#"></a>
-						<a class="think-tank" href="#"></a>
+				  <div id="surprising06-bkg">
 
-					</div>
+				    <h2>ADDITIONAL MYSTERY RESOURCES</h2>
+				    
+				    <a class="example-cup" href="#"></a>
+				    <a class="download-folder" href="#"></a>
+				    <a class="research-folder" href="#"></a>
+				    <a class="think-tank" href="#"></a>
+
+				    <a class="btn-tactic-1-mysteries-restart" href="#"></a>
+				    <a class="btn-tactic-1-mysteries-finish" href="#"></a>
+
+				  </div>
 				</div><!-- /#surprising06 -->
 
 				<div id="surprising07" class="slide active">
