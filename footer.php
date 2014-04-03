@@ -909,10 +909,117 @@
 				<div id="surprising02" class="slide">
 					<div id="surprising02-bkg">
 						<p class="title">Click which tactic<br />you want to learn first:</p>
-						<div id="button1"></div>
 			      <button id="mysteries-btn" type="button">Mysteries</button>
+			      <button id="unexpected-btn" type="button">The Unexpected</button>
 					</div>
 				</div><!-- /#surprising02 -->
+
+				<div id="surprising03" class="slide active">
+		      <video width="707" poster="<?php bloginfo('stylesheet_directory');?>/img/poster-overview-video.png" controls>
+						<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/Open.Chalkboard.Intro.Film.V1.webm" type="video/webm">
+						<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/Open.Chalkboard.Intro.Film.V1.mp4" type="video/mp4">
+						<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/Open.Chalkboard.Intro.Film.V1.f4v" type="video/f4v">
+						This video is best viewed in Chrome.
+		      </video> 
+				</div><!-- /#surprising03 -->
+
+				<div id="surprising04" class="slide active">
+					<div id="surprising04-bkg">
+						<p class="title">WHY renowned social psychologist Dr. Robert Cialdini<br />makes every lesson a MYSTERY:</p>
+						
+						<button id="details-clues-btn" type="button" class="active"></button>
+						<div id="yellow-circle">
+							<p id="body-details">The ‘Aha!’ experience becomes much more satisfying when it is preceded by the ‘Huh?’ experience....Think of it. This is something that not only keeps students awake but also makes them want to pay attention to the details.”<p/>
+						</div>
+						<button id="instant-relevancy-btn" type="button" class="active"></button>
+						<div id="yellow-circle-b">
+							<p id="body-instant">Mystery stories do not need personal relevance– they bring their own.” They can get our students to become engrossed in and to remember important material that they otherwise would not care about because it does not seem relevant to their daily lives.”</p>
+						</div>
+						<button id="deep-learning-btn" type="button" class="active"></button>
+						<div id="yellow-circle-c">
+							<p id="body-deep">Mysteries demand explanations. When we spur our students to engage in the process of providing explanation (rather than mere attention or answers), we offer them the best opportunity to understand... phenomena in a conceptual, meaningful, and enduring way.”</p>
+						</div>
+						<button id="beats-bell-btn" type="button" class="active"></button>
+						<div id="yellow-circle-d">
+							<p id="body-beats">When structured properly, mysteries are so compelling that they cannot remain an aloof and neutral outside observer....No one moved when the bell rang. In fact, when I tried to end the lecture, I was pelted with protests. The students would not let me stop until I had given them closure.”</p>
+						</div>
+					</div>
+				</div><!-- /#surprising04 -->
+
+				<div id="surprising05" class="slide active">
+					<div id="surprising05-bkg">
+
+					</div>
+				</div><!-- /#surprising05 -->
+
+				<div id="surprising06" class="slide active">
+					<div id="surprising06-bkg">
+						
+						<a class="example-cup" href="#"></a>
+						<a class="download-folder" href="#"></a>
+						<a class="research-folder" href="#"></a>
+						<a class="think-tank" href="#"></a>
+
+					</div>
+				</div><!-- /#surprising06 -->
+
+				<div id="surprising07" class="slide active">
+					<div id="surprising07-bkg">
+
+					</div>
+				</div><!-- /#surprising07 -->
+
+				<div id="surprising08" class="slide active">
+					<div id="surprising08-bkg">
+						<p class="title">WHY celebrated AP history teacher Diedre Farr<br />fills every lesson with THE UNEXPECTED:</p>
+						
+						<button id="jolts-btn" type="button" class="active"></button>
+						<div id="yellow-circle-1">
+							<p id="body-jolts">Quote pending...”<p/>
+						</div>
+						<button id="increase-btn" type="button" class="active"></button>
+						<div id="yellow-circle-2">
+							<p id="body-increase">Quote pending...”</p>
+						</div>
+						<button id="accel-btn" type="button" class="active"></button>
+						<div id="yellow-circle-3">
+							<p id="body-accel">Quote pending...”</p>
+						</div>
+						<button id="concepts-btn" type="button" class="active"></button>
+						<div id="yellow-circle-4">
+							<p id="body-concepts">Quote pending...”</p>
+						</div>
+					</div>
+				</div><!-- /#surprising08 -->
+
+				<div id="surprising09" class="slide active">
+					<div id="surprising09-bkg">
+
+					</div>
+				</div><!-- /#surprising09 -->
+
+				<div id="surprising10" class="slide active">
+					<div id="surprising10-bkg">
+
+					</div>
+				</div><!-- /#surprising10 -->
+
+				<div id="surprising11" class="slide active">
+					<div id="surprising11-bkg">
+
+					</div>
+				</div><!-- /#surprising11 -->
+
+				<div id="surprising11" class="slide active">
+					<div id="surprising11-bkg">
+						<p class="title">Well done completing strategy 1</p>
+			      <button id="goto-btn" type="button">go to strategy 2</button>
+			      <button id="signup-btn" type="button">sign up for tips &amp; tricks</button>
+			      <button id="share-btn" type="button">share with colleagues</button>
+					</div>
+				</div><!-- /#surprising11 -->
+
+				
 			</div>
 
 	  	<ul id="progress-surprising">
