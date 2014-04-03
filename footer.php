@@ -855,19 +855,47 @@
 			}
 			select_active();
 		}//end jumpto()
-
     
   </script>
 
 	<div id="bkg-modal-s">  
 	  <div id="modal-suprising">
 
-	  	<h2>Getting SURPRISING</h2>
+	  	<h2 class="heading s"><a href="#">SURPRISING</a></h2>
+	  	<h2 class="heading p"><a href="#">PERSONAL</a></h2>
+	  	<h2 class="heading a"><a href="#">ANCHORED</a></h2>
+	  	<h2 class="heading r"><a href="#">REAL</a></h2>
+	  	<h2 class="heading k"><a href="#">KINETIC</a></h2>
+
 	  	<a id="btn-close-s">Close</a>
 	  	<a id="btn-previous-s">Previous</a>
 	  	<a id="btn-next-s">Next</a>
 	  	
 	  	<div id="module-content-s">
+	  		<a id="btn-sub-menu-s">STEPS</a>      
+
+	      <div id="sub-menu-s">
+	      	<a id="btn-sub-menu-s-close">STEPS</a>
+	      	
+					<h3>BRIEFING:</h3>
+					<a id="briefing" class="step overview-video active" href="#">Overview Video</a>
+
+					<h3>TACTIC 1:</h3>
+					<a id="tactic1-1" class="step" href="#">Overview Video</a>
+					<a id="tactic1-2" class="step" href="#">Meet a Master</a>
+					<a id="tactic1-3" class="step" href="#">How To</a>
+					<a id="tactic1-4" class="step" href="#">Resources</a>
+
+					<h3>TACTIC 2:</h3>
+					<a id="tactic2-1" class="step" href="#">Overview Video</a>
+					<a id="tactic2-2" class="step" href="#">Meet a Master</a>
+					<a id="tactic2-3" class="step" href="#">How To</a>
+					<a id="tactic2-4" class="step" href="#">Resources</a>
+
+					<h3>CONCLUSION:</h3>
+					<a id="conclusion" class="step" href="#">CONCLUSION</a>
+
+	      </div><!-- /#sub-menu-s -->
 	  
 	  		<div id="surprising01" class="slide active">
 		      <video width="707" poster="<?php bloginfo('stylesheet_directory');?>/img/poster-overview-video.png" controls>
@@ -878,7 +906,7 @@
 		      </video> 
 				</div><!-- /#surprising01 -->
 
-				<div id="surprising02" class="slide active">
+				<div id="surprising02" class="slide">
 					<div id="surprising02-bkg">
 						<p class="title">Click which tactic<br />you want to learn first:</p>
 			      <button id="mysteries-btn" type="button">Mysteries</button>
@@ -995,7 +1023,7 @@
 			</div>
 
 	  	<ul id="progress-surprising">
-	  		<li class="overview-video">Briefing <span>30 SEC.</span></li>
+	  		<li class="overview-video active">Briefing <span>30 SEC.</span></li>
 	  		<li class="text-top">+</li>
 	  		<li class="explore-assumptions">Tactic 1 <span>3 MIN.</span></li>
 	  		<li class="text-top">+</li>
@@ -1007,6 +1035,59 @@
 	  </div><!-- /#modal-surprising --> 
 	</div><!-- /#bkg-modal-s -->
 
+	<script type="text/javascript">
+  	$(document).ready(initS);
+
+  	function initS() {
+  		console.log("initS");
+  		$('#btn-s').click(modal_open_s);
+  		$('#btn-close-s').click(modal_close_s);
+
+  		$('#btn-sub-menu-s').click(function(){
+	    	$('#sub-menu-s').css("display", "block");
+
+	    	$('#sub-menu-s').animate({
+						width: 220
+					}, 500, function() {
+					// Animation complete.
+						console.log("slide complete");
+						$('a#btn-sub-menu-s-close').css("display", "block");
+					});
+	    });
+		
+			$('#btn-sub-menu-s-close').click(function(){
+	      $('#sub-menu-s').animate({
+						width: 0
+					}, 500, function() {
+						// Animation complete.
+						$('#sub-menu-s').css("display", "none");
+						$('a#btn-sub-menu-s-close').css("display", "none");
+				});
+	    });
+  	}//end initS()
+  	
+  	function modal_open_s(event){
+  		event.preventDefault();
+  		$('#bkg-modal-s').show();
+  	}//modal_open_s()
+
+  	function modal_close_s(event){
+  		event.preventDefault();
+  		$('#bkg-modal-s').hide();
+  		$('#bkg-modal-s .slide').hide();
+  		$('#bkg-modal-s .slide').removeClass('active');
+  		$('#surprising01').addClass('active');
+  		$('#surprising01').show();
+
+  		$('#sub-menu-s a.step').removeClass('active');
+ 			$('div#module-content-s a#briefing').addClass('active');
+
+ 			$('ul#progress-surprising li').removeClass('active');
+
+  	}//modal_close_s()
+
+
+  </script>
 	
   <?php wp_footer(); ?>
 </body>

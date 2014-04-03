@@ -1106,7 +1106,7 @@ body#home #foot-rpt #foot-bkg {
   height: 100%;
   top: 0;
   left: 0;
-  display: block;
+  display: none;
   background: rgba(255, 255, 255, 0.5);
 
   #modal-suprising {
@@ -1117,561 +1117,730 @@ body#home #foot-rpt #foot-bkg {
     margin: 50px auto;
     background: url(img/bkg-player.png) no-repeat 0 0 transparent;
     padding-top: 12px;
-  }
 
-div#module-content-s {
-  
-  .slide {
-    display: block;
-    width: 707px;
-    height: 398px;
-    margin: 47px 0 0 58px;
-  }
-
-  #surprising01 {
-    display: none;
-  }
-  #surprising02 {
-    display: none;
-
-    div#surprising02-bkg {
+    ul#progress-surprising {
       display: block;
-      background: url(img/surprising02-bkg.png) no-repeat;
-      height: 398px;
-      
-      p.title {
-        font-size: 36px;
-        font-family: 'Sanchez';
-        color: @black;
-        text-transform: uppercase;
-        text-align: center;
-        padding-top: 42px;
-        font-weight: 600;
-      }
+      margin: 15px 0 0 97px;
 
-      button#mysteries-btn {
-        display: block;
-        width: 325px;
-        height: 81px;
-        margin-left: 168px;
-        margin-top: 50px;
-        font-size: 49px;
-        border: none;
-        color: @white;
-        text-transform: uppercase;
-        font-family: 'bern_sans_ctregular';
-        letter-spacing: 6px;
-        padding-left: 85px;
-        cursor: pointer;
-        background: url(img/magnifying-glass.png) 16px 14px no-repeat rgba(255, 255, 255, 0.5);
-      }
+      li {
+        font-family: 'bern_sans_ctregular', serif;
+        font-size: 22px;
+        display: inline-block;
+        color: #959595;  
+        
+        &.active {
+          color: #ffc000;    
 
-      button#mysteries-btn:hover {
-        background: url(img/magnifying-glass.png) 16px 14px no-repeat rgba(255, 202, 0, 1);
-      }
+          span {
+            color: #959595;
+          }
+        }
+        &.text-top {
+          vertical-align: top;
+          font-size: 30px;
+          line-height: 18px;    
+        }
+        &.equals {
+          vertical-align: top;
+          line-height: 18px;
+        }
 
-      button#unexpected-btn {
-        display: block;
-        width: 441px;
-        height: 81px;
-        margin-left: 168px;
-        margin-top: 30px;
-        font-size: 49px;
-        border: none;
-        color: @white;
-        text-transform: uppercase;
-        font-family: 'bern_sans_ctregular';
-        letter-spacing: 6px;
-        padding-left: 85px;
-        cursor: pointer;
-        background: url(img/white-spark.png) 16px 9px no-repeat rgba(255, 255, 255, 0.5);
-      }
+        span {
+          display: block;
+          font-size: 16px;
+          text-align: center;
+          font-style: italic;
+          padding-top: 7px;
+        }
 
-      button#unexpected-btn:hover {
-        background: url(img/white-spark.png) 16px 9px no-repeat rgba(255, 202, 0, 1);
-      }
-    }
+      }//li
+    }//ul#progress-surprising
     
-  }
-
-  #surprising03 {
-    display: none;
-  }
-
-  #surprising04 {
-    display: none;
-
-    div#surprising04-bkg {
-      display: none;
-      background: url(img/surprising04-bkg.png) no-repeat;
-      height: 398px;
-
-      p.title {
-        font-size: 22px;
-        font-family: 'Sanchez';
-        color: @white;
-        text-align: center;
-        padding-top: 24px;
-      }
-
-      button {
-        display: block;
-        border: none;
-        cursor: pointer;
-      }
-
-      button#details-clues-btn {
-        width: 120px;
-        height: 120px;
-        margin: 4px 0 0 41px;
-        background: url(img/detailsClues.png) no-repeat;
-      }
-
-      button#details-clues-btn:hover {
-        background: url(img/detailsCluesYellow.png) no-repeat;
-      }
-
-      div#yellow-circle {
-        display: none;
-        position: absolute;
-        background: url(img/yellowCircle.png) no-repeat;
-        width: 264px;
-        height: 264px;
-        margin: -86px 0 0 231px;
-
-        p {
-          position: absolute;
-          font-family: 'Sanchez';
-          font-size: 14px;
-          color: #002940;
-          margin: 61px 0 0 46px;
-          width: 182px;
-        }
-      }
-
-      button#details-clues-btn:hover + div#yellow-circle {
-        display: block;
-        background: url(img/yellowCircle.png) no-repeat;
-      }
-
-      button#instant-relevancy-btn {
-        position: absolute;
-        width: 109px;
-        height: 109px;
-        margin: -107px 0 0 542px;
-        background: url(img/instantRelevancy.png) no-repeat;
-      }
-
-      button#instant-relevancy-btn:hover {
-        background: url(img/instantRelevancyYellow.png) no-repeat;
-      }
-
-      div#yellow-circle-b {
-        display: none;
-        position: absolute;
-        background: url(img/yellowCircle.png) no-repeat;
-        width: 264px;
-        height: 264px;
-        margin: -86px 0 0 231px;
-
-        p {
-          position: absolute;
-          font-family: 'Sanchez';
-          font-size: 14px;
-          color: #002940;
-          margin: 50px 0 0 49px;
-          width: 182px;
-        }
-      }
-
-      button#instant-relevancy-btn:hover + div#yellow-circle-b {
-        display: block;
-        background: url(img/yellowCircle.png) no-repeat;
-      }
-
-      button#deep-learning-btn {
-        position: absolute;
-        width: 106px;
-        height: 106px;
-        margin: 45px 0 0 71px;
-        background: url(img/deepLearning.png) no-repeat;
-      }
-
-      button#deep-learning-btn:hover {
-        background: url(img/deepLearningYellow.png) no-repeat;
-      }
-
-      div#yellow-circle-c {
-        display: none;
-        position: absolute;
-        background: url(img/yellowCircle.png) no-repeat;
-        width: 264px;
-        height: 264px;
-        margin: -86px 0 0 231px;
-
-        p {
-          position: absolute;
-          font-family: 'Sanchez';
-          font-size: 14px;
-          color: #002940;
-          margin: 48px 0 0 50px;
-          width: 190px;
-        }
-      }
-
-      button#deep-learning-btn:hover + div#yellow-circle-c {
-        display: block;
-        background: url(img/yellowCircle.png) no-repeat;
-      }
-
-      button#beats-bell-btn {
-        position: absolute;
-        width: 120px;
-        height: 120px;
-        margin: 50px 0 0 552px;
-        background: url(img/beatsBell.png) no-repeat;
-      }
-
-      button#beats-bell-btn:hover {
-        background: url(img/beatsBellYellow.png) no-repeat;
-      }
-
-      div#yellow-circle-d {
-        display: none;
-        position: absolute;
-        background: url(img/yellowCircle.png) no-repeat;
-        width: 264px;
-        height: 264px;
-        margin: -86px 0 0 231px;
-
-        p {
-          position: absolute;
-          font-family: 'Sanchez';
-          font-size: 14px;
-          color: #002940;
-          margin: 54px 0 0 41px;
-          width: 194px;
-        }
-      }
-
-      button#beats-bell-btn:hover + div#yellow-circle-d {
-        display: block;
-        background: url(img/yellowCircle.png) no-repeat;
-      }
-    }
-  }
-
-  #surprising05 {
-    display: none;
-  }
-
-  #surprising06 {
-    display: block;
-
-    div#surprising06-bkg {
+    #btn-close-s, 
+    #btn-previous-s, 
+    #btn-next-s {
       display: block;
-      background: url(img/bkg-blue-shapes-bg.jpg) no-repeat;
-      height: 398px;
-      position: relative;
-
-      a.example-cup {
-        display: block;
-        width: 251px;
-        height: 245px;
-        background: url(img/sprite-cup.png) no-repeat top;
-        position: absolute;
-        top: 118px;
-        left: 28px;
-      }
-
-      a.download-folder {
-        display: block;
-        width: 233px;
-        height: 193px;
-        background: url(img/sprite-folder.png) no-repeat top;
-        position: absolute;
-        top: 192px;
-        left: 253px;
-      }
-
-      a.research-folder {
-        display: block;
-        width: 130px;
-        height: 136px;
-        background: url(img/sprite-research.png) no-repeat top;
-        position: absolute;
-        top: 79px;
-        left: 346px;
-      }
-
-      a.think-tank {
-        display: block;
-        width: 130px;
-        height: 133px;
-        background: url(img/sprite-think-tank.png) no-repeat top;
-        position: absolute;
-        top: 108px;
-        left: 507px;
-      }
-
-      a:hover {
-        background-position: bottom;
-      }
+      width: 32px;
+      height: 62px;
+      text-indent: -9999px;
+      outline: none;
+      position: absolute;
+      cursor: pointer;
     }
-  }//surprising06
+    #btn-close-s {
+      background: url(img/btn-close.png);
+      width: 18px;
+      height: 16px;
+      margin: -76px 0 0 790px;
+    }
+    #btn-previous-s {
+      background: url(img/btn-left-arrow.png) no-repeat 0 0 transparent;
+      margin: 155px 0 0 10px;
+    }
+    #btn-next-s {
+      background: url(img/btn-right-arrow.png) no-repeat 0 0 transparent;
+      margin: 155px 0 0 781px;
+    }
 
-  #surprising07 {
-    display: none;
+    h2 {
+      &.heading {
+        display: inline-block;
+        margin: 3px 9px 0 0;
+
+        a {
+          display: inline-block;
+          text-indent: -9999px;
+          height: 75px;
+        }
+      }
+      &.s {
+        width: 155px;
+        background: url(img/btn-module-surprising.png) no-repeat 0 0 transparent;
+        margin: 3px 9px 0 57px;
+      }
+      &.p {
+        width: 134px;
+        background: url(img/btn-module-personal.png) no-repeat 0 0 transparent; 
+      }
+      &.a {
+        width: 143px;
+        background: url(img/btn-module-anchored.png) no-repeat 0 0 transparent;      
+      }
+      &.r {
+        width: 101px;
+        background: url(img/btn-module-real.png) no-repeat 0 0 transparent;
+      }
+      &.k {
+        width: 124px;
+        background: url(img/btn-module-kinetic.png) no-repeat 0 0 transparent;
+      }
+
+    }
   }
 
-  #surprising08 {
-    display: none;
-
-    div#surprising08-bkg {
+  div#module-content-s {
+    
+    .slide {
       display: none;
-      background: url(img/surprising08-bkg.png) no-repeat;
+      width: 707px;
       height: 398px;
-
-      p.title {
-        font-size: 22px;
-        font-family: 'Sanchez';
-        color: @white;
-        text-align: center;
-        padding-top: 24px;
-      }
-
-      button {
-        display: block;
-        border: none;
-        cursor: pointer;
-      }
-
-      button#jolts-btn {
-        width: 120px;
-        height: 120px;
-        margin: 27px 0 0 24px;
-        background: url(img/joltsInterest.png) no-repeat;
-      }
-
-      button#jolts-btn:hover {
-        background: url(img/joltsInterestYellow.png) no-repeat;
-      }
-
-      div#yellow-circle-1 {
-        display: none;
-        position: absolute;
-        background: url(img/yellowCircle.png) no-repeat;
-        width: 264px;
-        height: 264px;
-        margin: -109px 0 0 231px;
-
-        p {
-          position: absolute;
-          font-family: 'Sanchez';
-          font-size: 14px;
-          color: #002940;
-          margin: 61px 0 0 46px;
-          width: 182px;
-        }
-      }
-
-      button#jolts-btn:hover + div#yellow-circle-1 {
-        display: block;
-        background: url(img/yellowCircle.png) no-repeat;
-      }
-
-      button#increase-btn {
-        position: absolute;
-        width: 109px;
-        height: 109px;
-        margin: -114px 0 0 541px;
-        background: url(img/increasesRecall.png) no-repeat;
-      }
-
-      button#increase-btn:hover {
-        background: url(img/increasesRecallYellow.png) no-repeat;
-      }
-
-      div#yellow-circle-2 {
-        display: none;
-        position: absolute;
-        background: url(img/yellowCircle.png) no-repeat;
-        width: 264px;
-        height: 264px;
-        margin: -109px 0 0 231px;
-
-        p {
-          position: absolute;
-          font-family: 'Sanchez';
-          font-size: 14px;
-          color: #002940;
-          margin: 50px 0 0 49px;
-          width: 182px;
-        }
-      }
-
-      button#increase-btn:hover + div#yellow-circle-2 {
-        display: block;
-        background: url(img/yellowCircle.png) no-repeat;
-      }
-
-      button#accel-btn {
-        position: absolute;
-        width: 106px;
-        height: 106px;
-        margin: 35px 0 0 71px;
-        background: url(img/accelLearning.png) no-repeat;
-      }
-
-      button#accel-btn:hover {
-        background: url(img/accelLearningYellow.png) no-repeat;
-      }
-
-      div#yellow-circle-3 {
-        display: none;
-        position: absolute;
-        background: url(img/yellowCircle.png) no-repeat;
-        width: 264px;
-        height: 264px;
-        margin: -109px 0 0 231px;
-
-        p {
-          position: absolute;
-          font-family: 'Sanchez';
-          font-size: 14px;
-          color: #002940;
-          margin: 48px 0 0 50px;
-          width: 190px;
-        }
-      }
-
-      button#accel-btn:hover + div#yellow-circle-3 {
-        display: block;
-        background: url(img/yellowCircle.png) no-repeat;
-      }
-
-      button#concepts-btn {
-        position: absolute;
-        width: 120px;
-        height: 120px;
-        margin: 36px 0 0 559px;
-        background: url(img/bringsConcepts.png) no-repeat;
-      }
-
-      button#concepts-btn:hover {
-        background: url(img/bringsConceptsYellow.png) no-repeat;
-      }
-
-      div#yellow-circle-4 {
-        display: none;
-        position: absolute;
-        background: url(img/yellowCircle.png) no-repeat;
-        width: 264px;
-        height: 264px;
-        margin: -109px 0 0 231px;
-
-        p {
-          position: absolute;
-          font-family: 'Sanchez';
-          font-size: 14px;
-          color: #002940;
-          margin: 54px 0 0 41px;
-          width: 194px;
-        }
-      }
-
-      button#concepts-btn:hover + div#yellow-circle-4 {
-        display: block;
-        background: url(img/yellowCircle.png) no-repeat;
-      }
+      margin: 0 0 0 58px;
     }
-  }
 
-  #surprising09 {
-    display: none;
-  }
-
-  #surprising10 {
-    display: none;
-  }
-
-  #surprising11 {
-    display: none;
-
-    div#surprising11-bkg {
+    .active {
       display: block;
-      background: url(img/surprising02-bkg.png) no-repeat;
-      height: 398px;
-      
-      p.title {
-        font-size: 30px;
-        font-family: 'Sanchez';
-        color: @white;
-        text-transform: uppercase;
-        text-align: center;
-        padding-top: 42px;
-        font-weight: 600;
-      }
+    }
 
-      button#goto-btn {
+    #surprising01 {
+      display: block;
+    }
+    #surprising02 {
+
+      div#surprising02-bkg {
         display: block;
-        width: 286px;
-        height: 60px;
-        margin: 47px auto 0 auto;
-        font-size: 36px;
-        border: none;
-        color: @white;
-        text-transform: uppercase;
-        font-family: 'bern_sans_ctregular';
-        letter-spacing: 2px;
-        cursor: pointer;
-        background-color: rgba(255, 255, 255, 0.5);
-      }
+        background: url(img/surprising02-bkg.png) no-repeat;
+        height: 398px;
+        
+        p.title {
+          font-size: 36px;
+          font-family: 'Sanchez';
+          color: @black;
+          text-transform: uppercase;
+          text-align: center;
+          padding-top: 42px;
+          font-weight: 600;
+        }
 
-      button#goto-btn:hover {
-        background-color: rgba(255, 202, 0, 1);
-      }
+        div#button1 {
+          display: block;
+          background-color: @white;
+          opacity: .5;
+          width: 325px;
+          height: 81px;
+          margin-left: 168px;
+          margin-top: 50px;
+        }
+        
 
-      button#signup-btn {
-        display: block;
-        width: 389px;
-        height: 60px;
-        margin: 12px auto 0 auto;
-        font-size: 36px;
-        border: none;
-        color: @white;
-        text-transform: uppercase;
-        font-family: 'bern_sans_ctregular';
-        letter-spacing: 2px;
-        cursor: pointer;
-        background-color: rgba(255, 255, 255, 0.5);
-      }
+        button#mysteries-btn {
+          display: block;
+          width: 325px;
+          height: 81px;
+          margin-left: 168px;
+          margin-top: 50px;
+          font-size: 49px;
+          border: none;
+          color: @white;
+          text-transform: uppercase;
+          font-family: 'bern_sans_ctregular';
+          letter-spacing: 6px;
+          padding-left: 85px;
+          cursor: pointer;
+          background: url(img/magnifying-glass.png) 16px 14px no-repeat rgba(255, 255, 255, 0.5);
+        }
+        button#mysteries-btn:hover {
+          background: url(img/magnifying-glass.png) 16px 14px no-repeat rgba(255, 202, 0, 1);
+        }
 
-      button#signup-btn:hover {
-        background-color: rgba(255, 202, 0, 1);
-      }
+        button#unexpected-btn {
+          display: block;
+          width: 441px;
+          height: 81px;
+          margin-left: 168px;
+          margin-top: 30px;
+          font-size: 49px;
+          border: none;
+          color: @white;
+          text-transform: uppercase;
+          font-family: 'bern_sans_ctregular';
+          letter-spacing: 6px;
+          padding-left: 85px;
+          cursor: pointer;
+          background: url(img/white-spark.png) 16px 9px no-repeat rgba(255, 255, 255, 0.5);
+        }
 
-      button#share-btn {
-        display: block;
-        width: 362px;
-        height: 60px;
-        margin: 12px auto 0 auto;
-        font-size: 36px;
-        border: none;
-        color: @white;
-        text-transform: uppercase;
-        font-family: 'bern_sans_ctregular';
-        letter-spacing: 2px;
-        cursor: pointer;
-        background-color: rgba(255, 255, 255, 0.5);
-      }
-
-      button#share-btn:hover {
-        background-color: rgba(255, 202, 0, 1);
+        button#unexpected-btn:hover {
+          background: url(img/white-spark.png) 16px 9px no-repeat rgba(255, 202, 0, 1);
+        }
       }
     }
-  }
+    #surprising03 {
+      display: none;
+    }
+    #surprising04 {
+      display: none;
 
-}
+      div#surprising04-bkg {
+        display: none;
+        background: url(img/surprising04-bkg.png) no-repeat;
+        height: 398px;
+
+        p.title {
+          font-size: 22px;
+          font-family: 'Sanchez';
+          color: @white;
+          text-align: center;
+          padding-top: 24px;
+        }
+
+        button {
+          display: block;
+          border: none;
+          cursor: pointer;
+        }
+
+        button#details-clues-btn {
+          width: 120px;
+          height: 120px;
+          margin: 4px 0 0 41px;
+          background: url(img/detailsClues.png) no-repeat;
+        }
+
+        button#details-clues-btn:hover {
+          background: url(img/detailsCluesYellow.png) no-repeat;
+        }
+
+        div#yellow-circle {
+          display: none;
+          position: absolute;
+          background: url(img/yellowCircle.png) no-repeat;
+          width: 264px;
+          height: 264px;
+          margin: -86px 0 0 231px;
+
+          p {
+            position: absolute;
+            font-family: 'Sanchez';
+            font-size: 14px;
+            color: #002940;
+            margin: 61px 0 0 46px;
+            width: 182px;
+          }
+        }
+
+        button#details-clues-btn:hover + div#yellow-circle {
+          display: block;
+          background: url(img/yellowCircle.png) no-repeat;
+        }
+
+        button#instant-relevancy-btn {
+          position: absolute;
+          width: 109px;
+          height: 109px;
+          margin: -107px 0 0 542px;
+          background: url(img/instantRelevancy.png) no-repeat;
+        }
+
+        button#instant-relevancy-btn:hover {
+          background: url(img/instantRelevancyYellow.png) no-repeat;
+        }
+
+        div#yellow-circle-b {
+          display: none;
+          position: absolute;
+          background: url(img/yellowCircle.png) no-repeat;
+          width: 264px;
+          height: 264px;
+          margin: -86px 0 0 231px;
+
+          p {
+            position: absolute;
+            font-family: 'Sanchez';
+            font-size: 14px;
+            color: #002940;
+            margin: 50px 0 0 49px;
+            width: 182px;
+          }
+        }
+
+        button#instant-relevancy-btn:hover + div#yellow-circle-b {
+          display: block;
+          background: url(img/yellowCircle.png) no-repeat;
+        }
+
+        button#deep-learning-btn {
+          position: absolute;
+          width: 106px;
+          height: 106px;
+          margin: 45px 0 0 71px;
+          background: url(img/deepLearning.png) no-repeat;
+        }
+
+        button#deep-learning-btn:hover {
+          background: url(img/deepLearningYellow.png) no-repeat;
+        }
+
+        div#yellow-circle-c {
+          display: none;
+          position: absolute;
+          background: url(img/yellowCircle.png) no-repeat;
+          width: 264px;
+          height: 264px;
+          margin: -86px 0 0 231px;
+
+          p {
+            position: absolute;
+            font-family: 'Sanchez';
+            font-size: 14px;
+            color: #002940;
+            margin: 48px 0 0 50px;
+            width: 190px;
+          }
+        }
+
+        button#deep-learning-btn:hover + div#yellow-circle-c {
+          display: block;
+          background: url(img/yellowCircle.png) no-repeat;
+        }
+
+        button#beats-bell-btn {
+          position: absolute;
+          width: 120px;
+          height: 120px;
+          margin: 50px 0 0 552px;
+          background: url(img/beatsBell.png) no-repeat;
+        }
+
+        button#beats-bell-btn:hover {
+          background: url(img/beatsBellYellow.png) no-repeat;
+        }
+
+        div#yellow-circle-d {
+          display: none;
+          position: absolute;
+          background: url(img/yellowCircle.png) no-repeat;
+          width: 264px;
+          height: 264px;
+          margin: -86px 0 0 231px;
+
+          p {
+            position: absolute;
+            font-family: 'Sanchez';
+            font-size: 14px;
+            color: #002940;
+            margin: 54px 0 0 41px;
+            width: 194px;
+          }
+        }
+
+        button#beats-bell-btn:hover + div#yellow-circle-d {
+          display: block;
+          background: url(img/yellowCircle.png) no-repeat;
+        }
+      }
+    }
+    #surprising05 {
+      display: none;
+    }    
+    #surprising06 {
+      display: none;
+
+      div#surprising06-bkg {
+        display: block;
+        background: url(img/bkg-blue-shapes-bg.jpg) no-repeat;
+        height: 398px;
+        position: relative;
+
+        a.example-cup {
+          display: block;
+          width: 251px;
+          height: 245px;
+          background: url(img/sprite-cup.png) no-repeat top;
+          position: absolute;
+          top: 118px;
+          left: 28px;
+        }
+
+        a.download-folder {
+          display: block;
+          width: 233px;
+          height: 193px;
+          background: url(img/sprite-folder.png) no-repeat top;
+          position: absolute;
+          top: 192px;
+          left: 253px;
+        }
+
+        a.research-folder {
+          display: block;
+          width: 130px;
+          height: 136px;
+          background: url(img/sprite-research.png) no-repeat top;
+          position: absolute;
+          top: 79px;
+          left: 346px;
+        }
+
+        a.think-tank {
+          display: block;
+          width: 130px;
+          height: 133px;
+          background: url(img/sprite-think-tank.png) no-repeat top;
+          position: absolute;
+          top: 108px;
+          left: 507px;
+        }
+
+        a:hover {
+          background-position: bottom;
+        }
+      }
+    }//surprising06
+
+    #surprising07 {
+      display: none;
+    }
+
+    #surprising08 {
+      display: none;
+
+      div#surprising08-bkg {
+        display: none;
+        background: url(img/surprising08-bkg.png) no-repeat;
+        height: 398px;
+
+        p.title {
+          font-size: 22px;
+          font-family: 'Sanchez';
+          color: @white;
+          text-align: center;
+          padding-top: 24px;
+        }
+
+        button {
+          display: block;
+          border: none;
+          cursor: pointer;
+        }
+
+        button#jolts-btn {
+          width: 120px;
+          height: 120px;
+          margin: 27px 0 0 24px;
+          background: url(img/joltsInterest.png) no-repeat;
+        }
+
+        button#jolts-btn:hover {
+          background: url(img/joltsInterestYellow.png) no-repeat;
+        }
+
+        div#yellow-circle-1 {
+          display: none;
+          position: absolute;
+          background: url(img/yellowCircle.png) no-repeat;
+          width: 264px;
+          height: 264px;
+          margin: -109px 0 0 231px;
+
+          p {
+            position: absolute;
+            font-family: 'Sanchez';
+            font-size: 14px;
+            color: #002940;
+            margin: 61px 0 0 46px;
+            width: 182px;
+          }
+        }
+
+        button#jolts-btn:hover + div#yellow-circle-1 {
+          display: block;
+          background: url(img/yellowCircle.png) no-repeat;
+        }
+
+        button#increase-btn {
+          position: absolute;
+          width: 109px;
+          height: 109px;
+          margin: -114px 0 0 541px;
+          background: url(img/increasesRecall.png) no-repeat;
+        }
+
+        button#increase-btn:hover {
+          background: url(img/increasesRecallYellow.png) no-repeat;
+        }
+
+        div#yellow-circle-2 {
+          display: none;
+          position: absolute;
+          background: url(img/yellowCircle.png) no-repeat;
+          width: 264px;
+          height: 264px;
+          margin: -109px 0 0 231px;
+
+          p {
+            position: absolute;
+            font-family: 'Sanchez';
+            font-size: 14px;
+            color: #002940;
+            margin: 50px 0 0 49px;
+            width: 182px;
+          }
+        }
+
+        button#increase-btn:hover + div#yellow-circle-2 {
+          display: block;
+          background: url(img/yellowCircle.png) no-repeat;
+        }
+
+        button#accel-btn {
+          position: absolute;
+          width: 106px;
+          height: 106px;
+          margin: 35px 0 0 71px;
+          background: url(img/accelLearning.png) no-repeat;
+        }
+
+        button#accel-btn:hover {
+          background: url(img/accelLearningYellow.png) no-repeat;
+        }
+
+        div#yellow-circle-3 {
+          display: none;
+          position: absolute;
+          background: url(img/yellowCircle.png) no-repeat;
+          width: 264px;
+          height: 264px;
+          margin: -109px 0 0 231px;
+
+          p {
+            position: absolute;
+            font-family: 'Sanchez';
+            font-size: 14px;
+            color: #002940;
+            margin: 48px 0 0 50px;
+            width: 190px;
+          }
+        }
+
+        button#accel-btn:hover + div#yellow-circle-3 {
+          display: block;
+          background: url(img/yellowCircle.png) no-repeat;
+        }
+
+        button#concepts-btn {
+          position: absolute;
+          width: 120px;
+          height: 120px;
+          margin: 36px 0 0 559px;
+          background: url(img/bringsConcepts.png) no-repeat;
+        }
+
+        button#concepts-btn:hover {
+          background: url(img/bringsConceptsYellow.png) no-repeat;
+        }
+
+        div#yellow-circle-4 {
+          display: none;
+          position: absolute;
+          background: url(img/yellowCircle.png) no-repeat;
+          width: 264px;
+          height: 264px;
+          margin: -109px 0 0 231px;
+
+          p {
+            position: absolute;
+            font-family: 'Sanchez';
+            font-size: 14px;
+            color: #002940;
+            margin: 54px 0 0 41px;
+            width: 194px;
+          }
+        }
+
+        button#concepts-btn:hover + div#yellow-circle-4 {
+          display: block;
+          background: url(img/yellowCircle.png) no-repeat;
+        }
+      }
+    }
+
+    #surprising09 {
+      display: none;
+    }
+
+    #surprising10 {
+      display: none;
+    }
+
+    #surprising11 {
+      display: none;
+
+      div#surprising11-bkg {
+        display: block;
+        background: url(img/surprising02-bkg.png) no-repeat;
+        height: 398px;
+        
+        p.title {
+          font-size: 30px;
+          font-family: 'Sanchez';
+          color: @white;
+          text-transform: uppercase;
+          text-align: center;
+          padding-top: 42px;
+          font-weight: 600;
+        }
+
+        button#goto-btn {
+          display: block;
+          width: 286px;
+          height: 60px;
+          margin: 47px auto 0 auto;
+          font-size: 36px;
+          border: none;
+          color: @white;
+          text-transform: uppercase;
+          font-family: 'bern_sans_ctregular';
+          letter-spacing: 2px;
+          cursor: pointer;
+          background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        button#goto-btn:hover {
+          background-color: rgba(255, 202, 0, 1);
+        }
+
+        button#signup-btn {
+          display: block;
+          width: 389px;
+          height: 60px;
+          margin: 12px auto 0 auto;
+          font-size: 36px;
+          border: none;
+          color: @white;
+          text-transform: uppercase;
+          font-family: 'bern_sans_ctregular';
+          letter-spacing: 2px;
+          cursor: pointer;
+          background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        button#signup-btn:hover {
+          background-color: rgba(255, 202, 0, 1);
+        }
+
+        button#share-btn {
+          display: block;
+          width: 362px;
+          height: 60px;
+          margin: 12px auto 0 auto;
+          font-size: 36px;
+          border: none;
+          color: @white;
+          text-transform: uppercase;
+          font-family: 'bern_sans_ctregular';
+          letter-spacing: 2px;
+          cursor: pointer;
+          background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        button#share-btn:hover {
+          background-color: rgba(255, 202, 0, 1);
+        }
+      }
+    }
+    #btn-sub-menu-s {
+      position: absolute;
+      text-indent: -9999px;
+      outline: none;
+      display: block;
+      width: 20px;
+      height: 61px;
+      margin: 15px 0 0 58px;
+      background: url(img/btn-sub-menu.png) no-repeat 0 0 transparent;
+      cursor: pointer; 
+    }  
+
+    #sub-menu-s {
+      font-family: "bern_sans_ctregular";
+      color: #ffffff;
+      background: url(img/bkg-menu.png) no-repeat 0 0 transparent;
+      display: none;
+      width: 220px;
+      height: 398px;
+      position: absolute;
+      margin: 0 0 0 58px;
+      z-index: 7;
+      padding-top: 20px;
+
+      h3{
+        margin: 0 0 10px 15px;
+      }
+
+      a {
+        display: block;
+        color: #ffffff;
+        text-decoration: none;
+        position: relative;
+        width: auto;
+        height: auto;
+        max-width: 150px;
+        cursor: pointer;
+
+        &.step {
+          font-family: Arial, 'sans-serif';
+          font-size: 12px;
+          line-height: 18px;
+          font-style: italic;
+          text-indent: 0;
+          margin: 0 0 5px 50px;
+        }
+        &.active, &:hover {
+          color: @navHover;
+        }
+        &#btn-sub-menu-s-close {
+          position: absolute;
+          text-indent: -9999px;
+          outline: none;
+          display: none;
+          width: 20px;
+          height: 61px;
+          margin: 0 0 0 197px;
+        }
+
+      }
+    }
+
+  }//#module-content-s
+
 
 }//#bkg-modal-s
