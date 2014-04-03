@@ -336,6 +336,7 @@ body {
   width: 913px;
   margin: 0 auto;
   padding-top: 28px;
+  position: relative;
 }
 #main-content-rpt #main-content-bkg #main-content h1#five-strategies {
   background: url(img/heading-5-strategies.png) no-repeat 0 0 transparent;
@@ -351,6 +352,17 @@ body {
   height: 68px;
   text-indent: -9999px;
   margin-bottom: 7px;
+  z-index: 10;
+  position: relative;
+}
+#main-content-rpt #main-content-bkg #main-content .glow-box {
+  width: 182px;
+  height: 22px;
+  display: block;
+  z-index: 9;
+  position: absolute;
+  top: 55px;
+  left: 1px;
 }
 #main-content-rpt #main-content-bkg #main-content #lightbulbs {
   position: absolute;
@@ -1380,7 +1392,7 @@ body#home #foot-rpt #foot-bkg {
   display: none;
 }
 #bkg-modal-s div#module-content-s #surprising04 {
-  display: none;
+  display: block;
 }
 #bkg-modal-s div#module-content-s #surprising04 div#surprising04-bkg {
   display: none;
@@ -1522,7 +1534,7 @@ body#home #foot-rpt #foot-bkg {
   display: none;
 }
 #bkg-modal-s div#module-content-s #surprising06 {
-  display: block;
+  display: none;
 }
 #bkg-modal-s div#module-content-s #surprising06 h2 {
   font-size: 30px;

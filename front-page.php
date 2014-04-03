@@ -4,6 +4,7 @@
 	  	<div id="main-content-bkg">
 				<div id="main-content">
 			  	<a id="btn-get-started" href="#">Get Started</a>
+			  	<div class="glow-box"></div>
 			  	<h1 id="five-strategies">5 Strategies to SPARK student CURIOSITY</h1>
 			  	<div id="nav-spark">
 				  	<ul>
