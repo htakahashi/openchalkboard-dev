@@ -918,6 +918,29 @@
 					</div>
 				</div><!-- /#surprising04 -->
 
+				<div id="surprising05" class="slide active">
+					<div id="surprising05-bkg">
+
+					</div>
+				</div><!-- /#surprising05 -->
+
+				<div id="surprising06" class="slide active">
+					<div id="surprising06-bkg">
+						
+						<a class="example-cup" href="#"></a>
+						<a class="download-folder" href="#"></a>
+						<a class="research-folder" href="#"></a>
+						<a class="think-tank" href="#"></a>
+
+					</div>
+				</div><!-- /#surprising06 -->
+
+				<div id="surprising07" class="slide active">
+					<div id="surprising07-bkg">
+
+					</div>
+				</div><!-- /#surprising07 -->
+
 				<div id="surprising08" class="slide active">
 					<div id="surprising08-bkg">
 						<p class="title">WHY celebrated AP history teacher Diedre Farr<br />fills every lesson with THE UNEXPECTED:</p>
@@ -941,6 +964,24 @@
 					</div>
 				</div><!-- /#surprising08 -->
 
+				<div id="surprising09" class="slide active">
+					<div id="surprising09-bkg">
+
+					</div>
+				</div><!-- /#surprising09 -->
+
+				<div id="surprising10" class="slide active">
+					<div id="surprising10-bkg">
+
+					</div>
+				</div><!-- /#surprising10 -->
+
+				<div id="surprising11" class="slide active">
+					<div id="surprising11-bkg">
+
+					</div>
+				</div><!-- /#surprising11 -->
+
 				<div id="surprising11" class="slide active">
 					<div id="surprising11-bkg">
 						<p class="title">Well done completing strategy 1</p>
@@ -950,16 +991,7 @@
 					</div>
 				</div><!-- /#surprising11 -->
 
-				<div id="surprising06" class="slide active">
-					<div id="surprising06-bkg">
-						
-						<a class="example-cup" href="#"></a>
-						<a class="download-folder" href="#"></a>
-						<a class="research-folder" href="#"></a>
-						<a class="think-tank" href="#"></a>
-
-					</div>
-				</div><!-- /#surprising06 -->
+				
 			</div>
 
 	  	<ul id="progress-surprising">
