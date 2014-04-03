@@ -965,7 +965,9 @@
 
 				<div id="surprising07" class="slide active">
 					<div id="surprising07-bkg">
-
+						<p class="title">how to teach with mystery</p>
+						<p class="subtitle">Every good mystery has a beginning, middle, &amp; end. One can form a full lesson.</p>
+						<p class="instruction">[ Click on the below steps ]</p>
 					</div>
 				</div><!-- /#surprising07 -->
 
