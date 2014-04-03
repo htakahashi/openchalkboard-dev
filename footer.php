@@ -1043,11 +1043,16 @@
 	  </div><!-- /#modal-surprising --> 
 	</div><!-- /#bkg-modal-s -->
 
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.6/TweenMax.min.js"></script>
+
 	<script type="text/javascript">
   	$(document).ready(initS);
 
   	function initS() {
   		console.log("initS");
+
+  		runGlow();
+
   		$('#btn-s').click(modal_open_s);
   		$('#btn-close-s').click(modal_close_s);
 
@@ -1073,6 +1078,20 @@
 				});
 	    });
   	}//end initS()
+
+  	function runGlow(){
+  		var makeItGlow = $('.glow-box');
+
+  		TweenMax.fromTo(makeItGlow, 0.7, {
+  		    boxShadow: "0px 0px 0px 0px rgba(255,192,0,0.3)"
+  		}, {
+  		    boxShadow: "0px 0px 80px 20px rgba(255,192,0,1)",
+  		    repeat: 5,
+  		    yoyo: true,
+  		    ease: Linear.easeNone
+  		});
+
+  	}
   	
   	function modal_open_s(event){
   		event.preventDefault();
