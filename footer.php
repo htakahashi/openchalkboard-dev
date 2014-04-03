@@ -1051,8 +1051,9 @@
   	function initS() {
   		console.log("initS");
 
-  		runGlow();
-
+  		
+  		setTimeout('runGlow()',3000);
+  		
   		$('#btn-s').click(modal_open_s);
   		$('#btn-close-s').click(modal_close_s);
 
