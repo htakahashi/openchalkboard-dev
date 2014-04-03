@@ -1312,7 +1312,6 @@ body#home #foot-rpt #foot-bkg {
       display: none;
 
       div#surprising04-bkg {
-        display: none;
         background: url(img/surprising04-bkg.png) no-repeat;
         height: 398px;
 
@@ -1474,7 +1473,7 @@ body#home #foot-rpt #foot-bkg {
       display: none;
     }    
     #surprising06 {
-      display: block;
+      display: none;
 
       h2 {
         font-size: 30px;
@@ -1565,12 +1564,53 @@ body#home #foot-rpt #foot-bkg {
         background: url(img/bkg-blue-shapes-bg.jpg) no-repeat;
         height: 398px;
 
-        p.title {
-          font-size: 35px;
+        p {
           font-family: 'Sanchez';
           color: @white;
           text-align: center;
-          padding-top: 24px;
+        }
+        p.title {
+          font-size: 35px;
+          padding-top: 21px;
+          text-transform: uppercase;
+        }
+
+        p.subtitle {
+          font-size: 17px;
+          padding-top: 10px;
+        }
+
+        p.instruction {
+          font-size: 22px;
+          font-family: 'bern_sans_ctregular';
+          letter-spacing: 2px;
+          padding-top: 58px;
+          text-transform: uppercase;
+        }
+
+        button {
+          display: inline;
+          font-family: 'bern_sans_ctregular';
+          color: @white;
+          text-align: center;
+          font-size: 218px;
+          background: none;
+          border: none;
+          margin-right: 18px;
+        }
+
+        button#btn-1 {
+          margin-left: 10px;
+        }
+
+        button:hover {
+          color: #ffc000;
+        }
+
+        p.note {
+          position: absolute;
+          margin: -49px 0 0 573px;
+          font-size: 6.5px;
           text-transform: uppercase;
         }
       }
@@ -1580,7 +1620,6 @@ body#home #foot-rpt #foot-bkg {
       display: none;
 
       div#surprising08-bkg {
-        display: none;
         background: url(img/surprising08-bkg.png) no-repeat;
         height: 398px;
 
@@ -1823,6 +1862,7 @@ body#home #foot-rpt #foot-bkg {
         }
       }
     }
+
     #btn-sub-menu-s {
       position: absolute;
       text-indent: -9999px;
