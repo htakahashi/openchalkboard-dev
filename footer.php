@@ -1081,13 +1081,63 @@
 
 			<div id="surprising09" class="slide">
 				<div id="surprising09-bkg">
-					<p>slide 9</p>
+					<h2>TEACHING WITH THE UNEXPECTED</h2>
+
+					<h4>Remember that your surprise <span>must</span> relate to the concept you are teaching.</h4>
+
+					<ul>
+						<li class="hover-area">Teasers</li>
+						<li class="img-holder teasers">
+							<img src="<?php bloginfo('stylesheet_directory');?>/img/teasers.png" alt="Teasers">
+						</li>
+						<li class="hover-area">experiments</li>
+						<li class="img-holder experiments">
+							<img src="<?php bloginfo('stylesheet_directory');?>/img/experiments.png" alt="experiments">
+						</li>
+						<li class="hover-area">interruptions</li>
+						<li class="img-holder interruptions">
+							<img src="<?php bloginfo('stylesheet_directory');?>/img/interruptions.png" alt="interruptions">
+						</li>
+						<li class="hover-area">bizarre details</li>
+						<li class="img-holder bizarre">
+							<img src="<?php bloginfo('stylesheet_directory');?>/img/bizarre.png" alt="bizarre details">
+						</li>
+						<li class="hover-area">change in pace</li>
+						<li class="img-holder change-in-pace">
+							<img src="<?php bloginfo('stylesheet_directory');?>/img/change-in-pace.png" alt="change in pace">
+						</li>
+						<li class="hover-area">change of medium</li>
+						<li class="img-holder change-of-medium">
+							<img src="<?php bloginfo('stylesheet_directory');?>/img/change-of-medium.png" alt="change of medium">
+						</li>
+						<li class="hover-area">change of scenery</li>
+						<li class="img-holder change-of-scenery">
+							<img src="<?php bloginfo('stylesheet_directory');?>/img/change-of-scenery.png" alt="change of scenery">
+						</li>
+						<li class="hover-area">play devil's advocate</li>
+						<li class="img-holder devils-advocate">
+							<img src="<?php bloginfo('stylesheet_directory');?>/img/devils-advocate.png" alt="play devil's advocate">
+						</li>
+					</ul>
+
+					<div class="direction-arrow">
+						<p>Hover to view ideas</p>
+					</div>
+
 				</div>
 			</div><!-- /#surprising09 -->
 
 			<div id="surprising10" class="slide">
 				<div id="surprising10-bkg">
-					<p>slide 10</p>
+					<h2>MORE “THE UNEXPECTED” RESOURCES</h2>
+
+					<a class="example-cup" href="#"></a>
+					<a class="download-folder" href="#"></a>
+					<a class="research-folder" href="#"></a>
+					<a class="think-tank" href="#"></a>
+
+					<a class="btn-tactic-1-mysteries-restart" href="#"></a>
+					<a class="btn-tactic-1-mysteries-finish" href="#"></a>
 				</div>
 			</div><!-- /#surprising10 -->
 
