@@ -979,12 +979,54 @@
 					<p class="title">how to teach with mystery</p>
 					<p class="subtitle">Every good mystery has a beginning, middle, &amp; end. One can form a full lesson.</p>
 					<p class="instruction">[ Click on the below steps ]</p>
-					<button id="btn-1" type="button">1</button>
+					<button id="btn-1" type="button" class="active">1</button>
+					<div class="caption-1 caption">
+						<h1 class="caption-header-text">STEP 1: Pose a compelling mystery related to the curriculum</h1>
+						<a class="caption-link" href="#">WHY DO THIS?</a>
+						<div class="clear"></div>
+						<div class="caption-example-text">Example:</div>
+						<div class="caption-body-text">In 1945, Betty Lou Oliver plummeted 75 feet when her elevator malfunctioned She survived? How?</div>
+					</div>
 					<button id="btn-2" type="button">2</button>
+					<div class="caption-2 caption">
+						<h1 class="caption-header-text">STEP 2: Force Students to Make a Prediction</h1>
+						<a class="caption-link" href="#">WHY DO THIS?</a>
+						<div class="clear"></div>
+						<div class="caption-example-text">Example:</div>
+						<div class="caption-body-text">Let’s take a vote, who thinks she survived by jumping at the last moment?…</div>
+					</div>
 					<button id="btn-3" type="button">3</button>
+					<div class="caption-3 caption">
+						<h1 class="caption-header-text">STEP 3: Deepen the mystery</h1>
+						<a class="caption-link" href="#">WHY DO THIS?</a>
+						<div class="clear"></div>
+						<div class="caption-example-text">Example:</div>
+						<div class="caption-body-text">There are many forces at play when an elevator plummets…</div>
+					</div>
 					<button id="btn-4" type="button">4</button>
+					<div class="caption-4 caption">
+						<h1 class="caption-header-text">STEP 4: Hone in on the answer by offering evidence against the alternatives</h1>
+						<a class="caption-link" href="#">WHY DO THIS?</a>
+						<div class="clear"></div>
+						<div class="caption-example-text">Example:</div>
+						<div class="caption-body-text">Jumping at the last second would not have worked due to the velocity...</div>
+					</div>
 					<button id="btn-5" type="button">5</button>
+					<div class="caption-5 caption">
+						<h1 class="caption-header-text">STEP 5: Resolve the mystery</h1>
+						<a class="caption-link" href="#">WHY DO THIS?</a>
+						<div class="clear"></div>
+						<div class="caption-example-text">Example:</div>
+						<div class="caption-body-text">Ultimately, she was saved by a pocket of air in the bottom of the elevator shaft...</div>
+					</div>
 					<button id="btn-6" type="button">6</button>
+					<div class="caption-6 caption">
+						<h1 class="caption-header-text">STEP 6: Draw IMPLICATIONS</h1>
+						<a class="caption-link" href="#">WHY DO THIS?</a>
+						<div class="clear"></div>
+						<div class="caption-example-text">Example:</div>
+						<div class="caption-body-text">How could we use our knowledge of forces to increase the safety of elevators?</div>
+					</div>
 					<p class="note">*adapted from (cialdini, 2005)</p>
 				</div>
 			</div><!-- /#surprising05 -->
@@ -1006,9 +1048,12 @@
 			</div><!-- /#surprising06 -->
 
 			<div id="surprising07" class="slide">
-				<div id="surprising07-bkg">
-					<p>slide 7</p>
-				</div>
+				<video width="707" poster="<?php bloginfo('stylesheet_directory');?>/img/poster-surprising3.png" controls>
+					<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/surprising3.webm" type="video/webm">
+					<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/surprising3.mp4" type="video/mp4">
+					<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/surprising3.f4v" type="video/f4v">
+					This video is best viewed in Chrome.
+		    </video>
 			</div><!-- /#surprising07 -->
 
 			<div id="surprising08" class="slide">
@@ -1017,19 +1062,19 @@
 					
 					<button id="jolts-btn" type="button" class="active"></button>
 					<div id="yellow-circle-1">
-						<p id="body-jolts">Quote pending...”</p>
+						<p id="body-jolts">I never thought I would get into European history, but Ms. Farr made it thrilling. Every day was full of surprises. Whether it we were debating decked out in costumes or using shaving cream to make Rococo sculptures, she had our full attention.”</br></br>&nbsp;&nbsp;-former student</p>
 					</div>
 					<button id="increase-btn" type="button" class="active"></button>
 					<div id="yellow-circle-2">
-						<p id="body-increase">Quote pending...”</p>
+						<p id="body-increase">It’s hard to forget the surprising details she includes in her lessons. While the tidbits aren’t critical, they definitely serve as memory hooks for the important stuff. I took her class 10 years ago, and I remember lessons vividly.”</br></br>-former student</p>
 					</div>
 					<button id="accel-btn" type="button" class="active"></button>
 					<div id="yellow-circle-3">
-						<p id="body-accel">Quote pending...”</p>
+						<p id="body-accel">The whole class hangs on her every word, because you never know what crazy thing from history she is going to say next. Everyone was eager to learn. If someone was disruptive, the class would actually hush them. True story!”</br></br>-former student</p>
 					</div>
 					<button id="concepts-btn" type="button" class="active"></button>
 					<div id="yellow-circle-4">
-						<p id="body-concepts">Quote pending...”</p>
+						<p id="body-concepts">By incorporating the shocking details of history, Ms. Farr made the ancient relevent and resonating. She even created her own textbook jampacked with the fascinating. It gave the critical information sticky context."</br></br>-former student</p>
 					</div>
 				</div>
 			</div><!-- /#surprising08 -->
