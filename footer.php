@@ -345,13 +345,13 @@
   	</div><!-- /#module-content -->
 
   	<ul id="progress-welcome">
-  		<li class="overview-video">Briefing <span>30 Sec.</span></li>
+  		<li class="overview-video briefing active">Briefing <span>30 Sec.</span></li>
   		<li class="text-top">+</li>
-  		<li class="explore-assumptions">Diagnostic 1 <span>15 Sec.</span></li>
+  		<li class="explore-assumptions diagnostic1">Diagnostic 1 <span>15 Sec.</span></li>
   		<li class="text-top">+</li>
-  		<li>Diagnostic 2<span>1 Min.</span></li>
+  		<li class="diagnostic2">Diagnostic 2<span>1 Min.</span></li>
   		<li class="text-top">+</li>
-  		<li>Diagnostic 3<span>15 Sec.</span></li>
+  		<li class="diagnostic3">Diagnostic 3<span>15 Sec.</span></li>
   		<li class="text-top">=</li>
   		<li class="gameplan">Your Custom GamePlan</li>
   	</ul>
@@ -375,6 +375,53 @@
 		$('#slide04 a.btn-submit-rating').click(slide_next);
 		$('#intro-checkboxes').on('click', herp);
 		$('#sub-menu a').on('click', jumpto);
+
+		$('#nav-spark ul li a').mouseover(function(event){
+
+			var current = $(this);
+			// console.log(current.attr('id'));
+		
+			if($(current).attr('id') == 'btn-surprising'){
+				$('#btn-s').css('background-position', '0 bottom');
+			}
+			if($(current).attr('id') == 'btn-personal'){
+				$('#btn-p').css('background-position', '0 bottom');
+			}
+			if($(current).attr('id') == 'btn-anchored'){
+				$('#btn-a').css('background-position', '0 bottom');
+			}
+			if($(current).attr('id') == 'btn-real'){
+				$('#btn-r').css('background-position', '0 bottom');
+			}
+			if($(current).attr('id') == 'btn-kinetic'){
+				$('#btn-k').css('background-position', '0 bottom');
+			}
+
+		});
+
+		$('#nav-spark ul li a').mouseout(function(event){
+
+			var current = $(this);
+			// console.log(current.attr('id'));
+		
+			if($(current).attr('id') == 'btn-surprising'){
+				$('#btn-s').css('background-position', '0 top');
+			}
+			if($(current).attr('id') == 'btn-personal'){
+				$('#btn-p').css('background-position', '0 top');
+			}
+			if($(current).attr('id') == 'btn-anchored'){
+				$('#btn-a').css('background-position', '0 top');
+			}
+			if($(current).attr('id') == 'btn-real'){
+				$('#btn-r').css('background-position', '0 top');
+			}
+			if($(current).attr('id') == 'btn-kinetic'){
+				$('#btn-k').css('background-position', '0 top');
+			}
+
+		});
+
 
 		$('#btn-sub-menu').click(function(){
 			$('#sub-menu').css("display", "block");
@@ -427,8 +474,8 @@
 		event.preventDefault();
 		console.log('modal_close');
 		$('#bkg-modal').hide();
-		$('.slide').hide();
-		$('.slide').removeClass('active');
+		$('#modal-welcome .slide').hide();
+		$('#modal-welcome .slide').removeClass('active');
 		$('#slide01').addClass('active');
 		$('#slide01').show();
 
@@ -441,7 +488,7 @@
 		event.preventDefault();
 		console.log('slide_back');
 
-		var current = $('.slide.active');
+		var current = $('#modal-welcome .slide.active');
 		console.log(current);
 		
 		if($(current).attr('id') == 'slide01'){
@@ -532,7 +579,7 @@
 		event.preventDefault();
 		console.log('slide_next');
 		
-		var current = $('.slide.active');
+		var current = $('#modal-welcome .slide.active');
 		
 		if($(current).attr('id') == 'slide01'){
 			// console.log('slide01');
@@ -634,8 +681,8 @@
 		if($(current).attr('id') == 'slide-9'){
 			// console.log('slide-9');
 			$('#bkg-modal').hide();
-			$('.slide').hide();
-			$('.slide').removeClass('active');
+			$('#modal-welcome .slide').hide();
+			$('#modal-welcome .slide').removeClass('active');
 			$('#slide01').addClass('active');
 			$('#slide01').show();
 		}
@@ -649,24 +696,28 @@
 
 		$('#sub-menu a.step').removeClass('active');
 
-		var current = $('.slide.active');
+		var current = $('#modal-welcome .slide.active');
 		var current_id = current.attr('id'); 
 		console.log(current_id);
 	
 		if(current_id == 'slide01'){
 			$('a#step1').addClass('active');
+			$('ul#progress-welcome li.briefing').addClass('active');
 		}
 
 		if(current_id == 'slide02' || current_id == 'slide03'){
 			$('#step2').addClass('active');
+			$('ul#progress-welcome li.diagnostic1').addClass('active');
 		}
 
 		if(current_id == 'slide04' || current_id == 'slide05'){
 			$('#step3-1').addClass('active');
+			$('ul#progress-welcome li.diagnostic2').addClass('active');
 		}
 
 		if(current_id == 'slide06' || current_id == 'slide07'){
 			$('#step3-2').addClass('active');
+			$('ul#progress-welcome li.diagnostic3').addClass('active');
 		}
 
 		if(current_id == 'slide-8'){
@@ -675,6 +726,7 @@
 
 		if(current_id == 'slide-9'){
 			$('#step5').addClass('active');
+			$('ul#progress-welcome li.gameplan').addClass('active');
 		}
 
 	}//select_active()
@@ -788,43 +840,43 @@
 
 		switch(current){
 			case 'step1':
-				$('div.slide').removeClass('active');
-				$('div.slide').hide();
+				$('#modal-welcome div.slide').removeClass('active');
+				$('#modal-welcome div.slide').hide();
 				$('#slide01').addClass('active');
 				$('#slide01').show();
 				break;
 
 			case 'step2':
-				$('div.slide').removeClass('active');
-				$('div.slide').hide();
+				$('#modal-welcome div.slide').removeClass('active');
+				$('#modal-welcome div.slide').hide();
 				$('#slide02').addClass('active');
 				$('#slide02').show();
 				break;
 
 			case 'step3-1':
-				$('div.slide').removeClass('active');
-				$('div.slide').hide();
+				$('#modal-welcome div.slide').removeClass('active');
+				$('#modal-welcome div.slide').hide();
 				$('#slide04').addClass('active');
 				$('#slide04').show();
 				break;
 
 			case 'step3-2':
-				$('div.slide').removeClass('active');
-				$('div.slide').hide();
+				$('#modal-welcome div.slide').removeClass('active');
+				$('#modal-welcome div.slide').hide();
 				$('#slide06').addClass('active');
 				$('#slide06').show();
 				break;
 
 			case 'step4':
-				$('div.slide').removeClass('active');
-				$('div.slide').hide();
+				$('#modal-welcome div.slide').removeClass('active');
+				$('#modal-welcome div.slide').hide();
 				$('#slide-8').addClass('active');
 				$('#slide-8').show();
 				break;
 
 			case 'step5':
-				$('div.slide').removeClass('active');
-				$('div.slide').hide();
+				$('#modal-welcome div.slide').removeClass('active');
+				$('#modal-welcome div.slide').hide();
 				$('#slide-9').addClass('active');
 				$('#slide-9').show();
 				break;
@@ -1053,9 +1105,9 @@
 	  	<ul id="progress-surprising">
 	  		<li class="overview-video active">Briefing <span>30 SEC.</span></li>
 	  		<li class="text-top">+</li>
-	  		<li class="explore-assumptions">Tactic 1 <span>3 MIN.</span></li>
+	  		<li class="tactic1">Tactic 1 <span>3 MIN.</span></li>
 	  		<li class="text-top">+</li>
-	  		<li>Tactic 2<span>3 MIN.</span></li>
+	  		<li class="tactic2">Tactic 2<span>3 MIN.</span></li>
 	  		<li class="text-top">=</li>
 	  		<li class="equals">EQUIPPED TO IMPLEMENT</li>
 	  	</ul>
@@ -1068,13 +1120,15 @@
 	$(document).ready(initS);
 
 	function initS() {
-		console.log("initS");
+		// console.log("initS");
 
 		$('#btn-next-s').click(slide_next_s);
 		$('#btn-previous-s').click(slide_back_s);
+		$('#sub-menu-s a').on('click', jumpto_s);
 
 		setTimeout('runGlow()',3000);
 
+		$('#btn-surprising').click(modal_open_s);
 		$('#btn-s').click(modal_open_s);
 		$('#btn-close-s').click(modal_close_s);
 
@@ -1135,10 +1189,10 @@
 
   	function slide_next_s(event){
   		event.preventDefault();
-  		console.log('slide_next_s');
+  		// console.log('slide_next_s');
 
   		var current = $('#module-content-s .slide.active');
-  		 console.log(current);
+  		 // console.log(current);
   		
   		if($(current).attr('id') == 'surprising01'){
   			var video1 = $('#surprising01 video').get(0);
@@ -1248,10 +1302,10 @@
 
 	function slide_back_s(event){
 		event.preventDefault();
-		console.log('slide_back_s');
+		// console.log('slide_back_s');
 
 		var current = $('#module-content-s .slide.active');
-		console.log(current);
+		// console.log(current);
 
 		if($(current).attr('id') == 'surprising01'){
 			$('#surprising01').show();
@@ -1357,6 +1411,7 @@
 
 		if(current_id == 'surprising03'){
 			$('#tactic1-1').addClass('active');
+			$('ul#progress-surprising li.tactic1').addClass('active');
 		}
 
 		if(current_id == 'surprising04'){
@@ -1371,27 +1426,110 @@
 			$('a#tactic1-4').addClass('active');
 		}
 
-		// if(current_id == 'surprising07'){
-		// 	$('a#tactic2-1').addClass('active');
-		// }
+		if(current_id == 'surprising07'){
+			$('a#tactic2-1').addClass('active');
+			$('ul#progress-surprising li.tactic2').addClass('active');
+		}
 
-		// if(current_id == 'surprising08'){
-		// 	$('a#tactic2-2').addClass('active');
-		// }
+		if(current_id == 'surprising08'){
+			$('a#tactic2-2').addClass('active');
+		}
 
-		// if(current_id == 'surprising09'){
-		// 	$('a#tactic2-3').addClass('active');
-		// }
+		if(current_id == 'surprising09'){
+			$('a#tactic2-3').addClass('active');
+		}
 
-		// if(current_id == 'surprising10'){
-		// 	$('a#tactic2-4').addClass('active');
-		// }
+		if(current_id == 'surprising10'){
+			$('a#tactic2-4').addClass('active');
+		}
 
-		// if(current_id == 'surprising11'){
-		// 	$('a#conclusion').addClass('active');
-		// }
+		if(current_id == 'surprising11'){
+			$('a#conclusion').addClass('active');
+			$('ul#progress-surprising li.equals').addClass('active');
+		}
 		
 	}//select_active_s()
+
+	function jumpto_s(event){
+		event.preventDefault();
+		var current = $(this).attr('id');
+		console.log(current);
+
+		switch(current){
+			case 'briefing':
+				$('div.slide').removeClass('active');
+				$('div.slide').hide();
+				$('#surprising01').addClass('active');
+				$('#surprising01').show();
+				break;
+
+			case 'tactic1-1':
+				$('div.slide').removeClass('active');
+				$('div.slide').hide();
+				$('#surprising03').addClass('active');
+				$('#surprising03').show();
+				break;
+
+			case 'tactic1-2':
+				$('div.slide').removeClass('active');
+				$('div.slide').hide();
+				$('#surprising04').addClass('active');
+				$('#surprising04').show();
+				break;
+
+			case 'tactic1-3':
+				$('div.slide').removeClass('active');
+				$('div.slide').hide();
+				$('#surprising05').addClass('active');
+				$('#surprising05').show();
+				break;
+
+			case 'tactic1-4':
+				$('div.slide').removeClass('active');
+				$('div.slide').hide();
+				$('#surprising06').addClass('active');
+				$('#surprising06').show();
+				break;
+
+			case 'tactic2-1':
+				$('div.slide').removeClass('active');
+				$('div.slide').hide();
+				$('#surprising07').addClass('active');
+				$('#surprising07').show();
+				break;
+
+			case 'tactic2-2':
+				$('div.slide').removeClass('active');
+				$('div.slide').hide();
+				$('#surprising08').addClass('active');
+				$('#surprising08').show();
+				break;
+
+			case 'tactic2-3':
+				$('div.slide').removeClass('active');
+				$('div.slide').hide();
+				$('#surprising09').addClass('active');
+				$('#surprising09').show();
+				break;
+			
+			case 'tactic2-4':
+				$('div.slide').removeClass('active');
+				$('div.slide').hide();
+				$('#surprising10').addClass('active');
+				$('#surprising10').show();
+				break;
+
+			case 'conclusion':
+				$('div.slide').removeClass('active');
+				$('div.slide').hide();
+				$('#surprising11').addClass('active');
+				$('#surprising11').show();
+				break;
+
+		}
+		select_active_s();
+	}//end jumpto_s()
+
 
 </script>
 	
