@@ -1434,6 +1434,13 @@
 		}
 
 		if($(current).attr('id') == 'surprising07'){
+			var video3 = $('#surprising07 video').get(0);
+  			if (video3.paused) {
+				//video3.play();
+  			}else {
+				video3.pause();
+			}
+
 			$(current).removeClass('active');
 			$('#surprising07').hide();
 
