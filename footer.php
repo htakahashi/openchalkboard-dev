@@ -924,7 +924,16 @@
 
 			<div id="surprising05" class="slide">
 				<div id="surprising05-bkg">
-					<p>slide 5</p>
+					<p class="title">how to teach with mystery</p>
+					<p class="subtitle">Every good mystery has a beginning, middle, &amp; end. One can form a full lesson.</p>
+					<p class="instruction">[ Click on the below steps ]</p>
+					<button id="btn-1" type="button">1</button>
+					<button id="btn-2" type="button">2</button>
+					<button id="btn-3" type="button">3</button>
+					<button id="btn-4" type="button">4</button>
+					<button id="btn-5" type="button">5</button>
+					<button id="btn-6" type="button">6</button>
+					<p class="note">*adapted from (cialdini, 2005)</p>
 				</div>
 			</div><!-- /#surprising05 -->
 
@@ -946,16 +955,7 @@
 
 			<div id="surprising07" class="slide">
 				<div id="surprising07-bkg">
-					<p class="title">how to teach with mystery</p>
-					<p class="subtitle">Every good mystery has a beginning, middle, &amp; end. One can form a full lesson.</p>
-					<p class="instruction">[ Click on the below steps ]</p>
-					<button id="btn-1" type="button">1</button>
-					<button id="btn-2" type="button">2</button>
-					<button id="btn-3" type="button">3</button>
-					<button id="btn-4" type="button">4</button>
-					<button id="btn-5" type="button">5</button>
-					<button id="btn-6" type="button">6</button>
-					<p class="note">*adapted from (cialdini, 2005)</p>
+					<p>slide 7</p>
 				</div>
 			</div><!-- /#surprising07 -->
 
