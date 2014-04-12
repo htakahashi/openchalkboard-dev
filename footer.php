@@ -345,13 +345,13 @@
   	</div><!-- /#module-content -->
 
   	<ul id="progress-welcome">
-  		<li class="overview-video">Briefing <span>30 Sec.</span></li>
+  		<li class="overview-video briefing active">Briefing <span>30 Sec.</span></li>
   		<li class="text-top">+</li>
-  		<li class="explore-assumptions">Diagnostic 1 <span>15 Sec.</span></li>
+  		<li class="explore-assumptions diagnostic1">Diagnostic 1 <span>15 Sec.</span></li>
   		<li class="text-top">+</li>
-  		<li>Diagnostic 2<span>1 Min.</span></li>
+  		<li class="diagnostic2">Diagnostic 2<span>1 Min.</span></li>
   		<li class="text-top">+</li>
-  		<li>Diagnostic 3<span>15 Sec.</span></li>
+  		<li class="diagnostic3">Diagnostic 3<span>15 Sec.</span></li>
   		<li class="text-top">=</li>
   		<li class="gameplan">Your Custom GamePlan</li>
   	</ul>
@@ -375,6 +375,53 @@
 		$('#slide04 a.btn-submit-rating').click(slide_next);
 		$('#intro-checkboxes').on('click', herp);
 		$('#sub-menu a').on('click', jumpto);
+
+		$('#nav-spark ul li a').mouseover(function(event){
+
+			var current = $(this);
+			// console.log(current.attr('id'));
+		
+			if($(current).attr('id') == 'btn-surprising'){
+				$('#btn-s').css('background-position', '0 bottom');
+			}
+			if($(current).attr('id') == 'btn-personal'){
+				$('#btn-p').css('background-position', '0 bottom');
+			}
+			if($(current).attr('id') == 'btn-anchored'){
+				$('#btn-a').css('background-position', '0 bottom');
+			}
+			if($(current).attr('id') == 'btn-real'){
+				$('#btn-r').css('background-position', '0 bottom');
+			}
+			if($(current).attr('id') == 'btn-kinetic'){
+				$('#btn-k').css('background-position', '0 bottom');
+			}
+
+		});
+
+		$('#nav-spark ul li a').mouseout(function(event){
+
+			var current = $(this);
+			// console.log(current.attr('id'));
+		
+			if($(current).attr('id') == 'btn-surprising'){
+				$('#btn-s').css('background-position', '0 top');
+			}
+			if($(current).attr('id') == 'btn-personal'){
+				$('#btn-p').css('background-position', '0 top');
+			}
+			if($(current).attr('id') == 'btn-anchored'){
+				$('#btn-a').css('background-position', '0 top');
+			}
+			if($(current).attr('id') == 'btn-real'){
+				$('#btn-r').css('background-position', '0 top');
+			}
+			if($(current).attr('id') == 'btn-kinetic'){
+				$('#btn-k').css('background-position', '0 top');
+			}
+
+		});
+
 
 		$('#btn-sub-menu').click(function(){
 			$('#sub-menu').css("display", "block");
@@ -427,8 +474,8 @@
 		event.preventDefault();
 		console.log('modal_close');
 		$('#bkg-modal').hide();
-		$('.slide').hide();
-		$('.slide').removeClass('active');
+		$('#modal-welcome .slide').hide();
+		$('#modal-welcome .slide').removeClass('active');
 		$('#slide01').addClass('active');
 		$('#slide01').show();
 
@@ -441,7 +488,7 @@
 		event.preventDefault();
 		console.log('slide_back');
 
-		var current = $('.slide.active');
+		var current = $('#modal-welcome .slide.active');
 		console.log(current);
 		
 		if($(current).attr('id') == 'slide01'){
@@ -532,7 +579,7 @@
 		event.preventDefault();
 		console.log('slide_next');
 		
-		var current = $('.slide.active');
+		var current = $('#modal-welcome .slide.active');
 		
 		if($(current).attr('id') == 'slide01'){
 			// console.log('slide01');
@@ -634,8 +681,8 @@
 		if($(current).attr('id') == 'slide-9'){
 			// console.log('slide-9');
 			$('#bkg-modal').hide();
-			$('.slide').hide();
-			$('.slide').removeClass('active');
+			$('#modal-welcome .slide').hide();
+			$('#modal-welcome .slide').removeClass('active');
 			$('#slide01').addClass('active');
 			$('#slide01').show();
 		}
@@ -649,24 +696,28 @@
 
 		$('#sub-menu a.step').removeClass('active');
 
-		var current = $('.slide.active');
+		var current = $('#modal-welcome .slide.active');
 		var current_id = current.attr('id'); 
 		console.log(current_id);
 	
 		if(current_id == 'slide01'){
 			$('a#step1').addClass('active');
+			$('ul#progress-welcome li.briefing').addClass('active');
 		}
 
 		if(current_id == 'slide02' || current_id == 'slide03'){
 			$('#step2').addClass('active');
+			$('ul#progress-welcome li.diagnostic1').addClass('active');
 		}
 
 		if(current_id == 'slide04' || current_id == 'slide05'){
 			$('#step3-1').addClass('active');
+			$('ul#progress-welcome li.diagnostic2').addClass('active');
 		}
 
 		if(current_id == 'slide06' || current_id == 'slide07'){
 			$('#step3-2').addClass('active');
+			$('ul#progress-welcome li.diagnostic3').addClass('active');
 		}
 
 		if(current_id == 'slide-8'){
@@ -675,6 +726,7 @@
 
 		if(current_id == 'slide-9'){
 			$('#step5').addClass('active');
+			$('ul#progress-welcome li.gameplan').addClass('active');
 		}
 
 	}//select_active()
@@ -788,43 +840,43 @@
 
 		switch(current){
 			case 'step1':
-				$('div.slide').removeClass('active');
-				$('div.slide').hide();
+				$('#modal-welcome div.slide').removeClass('active');
+				$('#modal-welcome div.slide').hide();
 				$('#slide01').addClass('active');
 				$('#slide01').show();
 				break;
 
 			case 'step2':
-				$('div.slide').removeClass('active');
-				$('div.slide').hide();
+				$('#modal-welcome div.slide').removeClass('active');
+				$('#modal-welcome div.slide').hide();
 				$('#slide02').addClass('active');
 				$('#slide02').show();
 				break;
 
 			case 'step3-1':
-				$('div.slide').removeClass('active');
-				$('div.slide').hide();
+				$('#modal-welcome div.slide').removeClass('active');
+				$('#modal-welcome div.slide').hide();
 				$('#slide04').addClass('active');
 				$('#slide04').show();
 				break;
 
 			case 'step3-2':
-				$('div.slide').removeClass('active');
-				$('div.slide').hide();
+				$('#modal-welcome div.slide').removeClass('active');
+				$('#modal-welcome div.slide').hide();
 				$('#slide06').addClass('active');
 				$('#slide06').show();
 				break;
 
 			case 'step4':
-				$('div.slide').removeClass('active');
-				$('div.slide').hide();
+				$('#modal-welcome div.slide').removeClass('active');
+				$('#modal-welcome div.slide').hide();
 				$('#slide-8').addClass('active');
 				$('#slide-8').show();
 				break;
 
 			case 'step5':
-				$('div.slide').removeClass('active');
-				$('div.slide').hide();
+				$('#modal-welcome div.slide').removeClass('active');
+				$('#modal-welcome div.slide').hide();
 				$('#slide-9').addClass('active');
 				$('#slide-9').show();
 				break;
@@ -928,11 +980,53 @@
 					<p class="subtitle">Every good mystery has a beginning, middle, &amp; end. One can form a full lesson.</p>
 					<p class="instruction">[ Click on the below steps ]</p>
 					<button id="btn-1" type="button">1</button>
+					<div class="caption-1 caption">
+						<h1 class="caption-header-text">STEP 1: Pose a compelling mystery related to the curriculum</h1>
+						<a class="caption-link" href="#">WHY DO THIS?</a>
+						<div class="clear"></div>
+						<div class="caption-example-text">Example:</div>
+						<div class="caption-body-text">In 1945, Betty Lou Oliver plummeted 75 feet when her elevator malfunctioned She survived? How?</div>
+					</div>
 					<button id="btn-2" type="button">2</button>
+					<div class="caption-2 caption">
+						<h1 class="caption-header-text">STEP 2: Force Students to Make a Prediction</h1>
+						<a class="caption-link" href="#">WHY DO THIS?</a>
+						<div class="clear"></div>
+						<div class="caption-example-text">Example:</div>
+						<div class="caption-body-text">Let’s take a vote, who thinks she survived by jumping at the last moment?…</div>
+					</div>
 					<button id="btn-3" type="button">3</button>
+					<div class="caption-3 caption">
+						<h1 class="caption-header-text">STEP 3: Deepen the mystery</h1>
+						<a class="caption-link" href="#">WHY DO THIS?</a>
+						<div class="clear"></div>
+						<div class="caption-example-text">Example:</div>
+						<div class="caption-body-text">There are many forces at play when an elevator plummets…</div>
+					</div>
 					<button id="btn-4" type="button">4</button>
+					<div class="caption-4 caption">
+						<h1 class="caption-header-text">STEP 4: Hone in on the answer by offering evidence against the alternatives</h1>
+						<a class="caption-link" href="#">WHY DO THIS?</a>
+						<div class="clear"></div>
+						<div class="caption-example-text">Example:</div>
+						<div class="caption-body-text">Jumping at the last second would not have worked due to the velocity...</div>
+					</div>
 					<button id="btn-5" type="button">5</button>
+					<div class="caption-5 caption">
+						<h1 class="caption-header-text">STEP 5: Resolve the mystery</h1>
+						<a class="caption-link" href="#">WHY DO THIS?</a>
+						<div class="clear"></div>
+						<div class="caption-example-text">Example:</div>
+						<div class="caption-body-text">Ultimately, she was saved by a pocket of air in the bottom of the elevator shaft...</div>
+					</div>
 					<button id="btn-6" type="button">6</button>
+					<div class="caption-6 caption">
+						<h1 class="caption-header-text">STEP 6: Draw IMPLICATIONS</h1>
+						<a class="caption-link" href="#">WHY DO THIS?</a>
+						<div class="clear"></div>
+						<div class="caption-example-text">Example:</div>
+						<div class="caption-body-text">How could we use our knowledge of forces to increase the safety of elevators?</div>
+					</div>
 					<p class="note">*adapted from (cialdini, 2005)</p>
 				</div>
 			</div><!-- /#surprising05 -->
@@ -954,9 +1048,12 @@
 			</div><!-- /#surprising06 -->
 
 			<div id="surprising07" class="slide">
-				<div id="surprising07-bkg">
-					<p>slide 7</p>
-				</div>
+				<video width="707" poster="<?php bloginfo('stylesheet_directory');?>/img/poster-surprising3.png" controls>
+					<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/surprising3.webm" type="video/webm">
+					<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/surprising3.mp4" type="video/mp4">
+					<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/surprising3.f4v" type="video/f4v">
+					This video is best viewed in Chrome.
+		    </video>
 			</div><!-- /#surprising07 -->
 
 			<div id="surprising08" class="slide">
@@ -965,19 +1062,19 @@
 					
 					<button id="jolts-btn" type="button" class="active"></button>
 					<div id="yellow-circle-1">
-						<p id="body-jolts">Quote pending...”</p>
+						<p id="body-jolts">I never thought I would get into European history, but Ms. Farr made it thrilling. Every day was full of surprises. Whether it we were debating decked out in costumes or using shaving cream to make Rococo sculptures, she had our full attention.”</br></br>&nbsp;&nbsp;-former student</p>
 					</div>
 					<button id="increase-btn" type="button" class="active"></button>
 					<div id="yellow-circle-2">
-						<p id="body-increase">Quote pending...”</p>
+						<p id="body-increase">It’s hard to forget the surprising details she includes in her lessons. While the tidbits aren’t critical, they definitely serve as memory hooks for the important stuff. I took her class 10 years ago, and I remember lessons vividly.”</br></br>-former student</p>
 					</div>
 					<button id="accel-btn" type="button" class="active"></button>
 					<div id="yellow-circle-3">
-						<p id="body-accel">Quote pending...”</p>
+						<p id="body-accel">The whole class hangs on her every word, because you never know what crazy thing from history she is going to say next. Everyone was eager to learn. If someone was disruptive, the class would actually hush them. True story!”</br></br>-former student</p>
 					</div>
 					<button id="concepts-btn" type="button" class="active"></button>
 					<div id="yellow-circle-4">
-						<p id="body-concepts">Quote pending...”</p>
+						<p id="body-concepts">By incorporating the shocking details of history, Ms. Farr made the ancient relevent and resonating. She even created her own textbook jampacked with the fascinating. It gave the critical information sticky context."</br></br>-former student</p>
 					</div>
 				</div>
 			</div><!-- /#surprising08 -->
@@ -1058,9 +1155,9 @@
 	  	<ul id="progress-surprising">
 	  		<li class="overview-video active">Briefing <span>30 SEC.</span></li>
 	  		<li class="text-top">+</li>
-	  		<li class="explore-assumptions">Tactic 1 <span>3 MIN.</span></li>
+	  		<li class="tactic1">Tactic 1 <span>3 MIN.</span></li>
 	  		<li class="text-top">+</li>
-	  		<li>Tactic 2<span>3 MIN.</span></li>
+	  		<li class="tactic2">Tactic 2<span>3 MIN.</span></li>
 	  		<li class="text-top">=</li>
 	  		<li class="equals">EQUIPPED TO IMPLEMENT</li>
 	  	</ul>
@@ -1073,13 +1170,15 @@
 	$(document).ready(initS);
 
 	function initS() {
-		console.log("initS");
+		// console.log("initS");
 
 		$('#btn-next-s').click(slide_next_s);
 		$('#btn-previous-s').click(slide_back_s);
+		$('#sub-menu-s a').on('click', jumpto_s);
 
 		setTimeout('runGlow()',3000);
 
+		$('#btn-surprising').click(modal_open_s);
 		$('#btn-s').click(modal_open_s);
 		$('#btn-close-s').click(modal_close_s);
 
@@ -1104,6 +1203,73 @@
 				$('a#btn-sub-menu-s-close').css("display", "none");
 			});
 		});
+
+		$('#mysteries-btn').click(function(event){
+			event.preventDefault();
+			$('#btn-next-s').click();
+		});
+		$('.btn-tactic-1-mysteries-finish').click(function(event){
+			event.preventDefault();
+			$('#btn-next-s').click();
+		});
+
+
+		$('#unexpected-btn').click(function(event){
+			event.preventDefault();
+			$('#surprising02').removeClass('active');
+			$('#surprising02').hide();
+
+			$('#surprising07').addClass('active');
+			$('#surprising07').show();
+
+		});
+
+		$('.btn-tactic-1-mysteries-restart').click(function(event){
+			event.preventDefault();
+			$('#surprising06').removeClass('active');
+			$('#surprising06').hide();
+
+			$('#surprising03').addClass('active');
+			$('#surprising03').show();
+
+		});
+
+		$('#surprising05-bkg button').click(function(event){
+			//console.log($(this).attr('id'));
+			event.preventDefault();
+
+			var current = $(this).attr('id');
+
+			$('div.caption').css("display", "none");
+			$('#surprising05-bkg button').css("color", "#ffffff");
+
+			if(current == 'btn-1'){
+				$('div.caption-1').css("display", "block");
+				$('#btn-1').css("color", "#ffc000");
+			}
+			if(current == 'btn-2'){
+				$('div.caption-2').css("display", "block");
+				$('#btn-2').css("color", "#ffc000");
+			}
+			if(current == 'btn-3'){
+				$('div.caption-3').css("display", "block");
+				$('#btn-3').css("color", "#ffc000");
+			}
+			if(current == 'btn-4'){
+				$('div.caption-4').css("display", "block");
+				$('#btn-4').css("color", "#ffc000");
+			}
+			if(current == 'btn-5'){
+				$('div.caption-5').css("display", "block");
+				$('#btn-5').css("color", "#ffc000");
+			}
+			if(current == 'btn-6'){
+				$('div.caption-6').css("display", "block");
+				$('#btn-6').css("color", "#ffc000");
+			}			
+
+		});
+
 	}//end initS()
 
 	function runGlow(){
@@ -1140,10 +1306,10 @@
 
   	function slide_next_s(event){
   		event.preventDefault();
-  		console.log('slide_next_s');
+  		// console.log('slide_next_s');
 
   		var current = $('#module-content-s .slide.active');
-  		 console.log(current);
+  		 // console.log(current);
   		
   		if($(current).attr('id') == 'surprising01'){
   			var video1 = $('#surprising01 video').get(0);
@@ -1253,10 +1419,10 @@
 
 	function slide_back_s(event){
 		event.preventDefault();
-		console.log('slide_back_s');
+		// console.log('slide_back_s');
 
 		var current = $('#module-content-s .slide.active');
-		console.log(current);
+		// console.log(current);
 
 		if($(current).attr('id') == 'surprising01'){
 			$('#surprising01').show();
@@ -1362,6 +1528,7 @@
 
 		if(current_id == 'surprising03'){
 			$('#tactic1-1').addClass('active');
+			$('ul#progress-surprising li.tactic1').addClass('active');
 		}
 
 		if(current_id == 'surprising04'){
@@ -1376,27 +1543,110 @@
 			$('a#tactic1-4').addClass('active');
 		}
 
-		// if(current_id == 'surprising07'){
-		// 	$('a#tactic2-1').addClass('active');
-		// }
+		if(current_id == 'surprising07'){
+			$('a#tactic2-1').addClass('active');
+			$('ul#progress-surprising li.tactic2').addClass('active');
+		}
 
-		// if(current_id == 'surprising08'){
-		// 	$('a#tactic2-2').addClass('active');
-		// }
+		if(current_id == 'surprising08'){
+			$('a#tactic2-2').addClass('active');
+		}
 
-		// if(current_id == 'surprising09'){
-		// 	$('a#tactic2-3').addClass('active');
-		// }
+		if(current_id == 'surprising09'){
+			$('a#tactic2-3').addClass('active');
+		}
 
-		// if(current_id == 'surprising10'){
-		// 	$('a#tactic2-4').addClass('active');
-		// }
+		if(current_id == 'surprising10'){
+			$('a#tactic2-4').addClass('active');
+		}
 
-		// if(current_id == 'surprising11'){
-		// 	$('a#conclusion').addClass('active');
-		// }
+		if(current_id == 'surprising11'){
+			$('a#conclusion').addClass('active');
+			$('ul#progress-surprising li.equals').addClass('active');
+		}
 		
 	}//select_active_s()
+
+	function jumpto_s(event){
+		event.preventDefault();
+		var current = $(this).attr('id');
+		console.log(current);
+
+		switch(current){
+			case 'briefing':
+				$('div.slide').removeClass('active');
+				$('div.slide').hide();
+				$('#surprising01').addClass('active');
+				$('#surprising01').show();
+				break;
+
+			case 'tactic1-1':
+				$('div.slide').removeClass('active');
+				$('div.slide').hide();
+				$('#surprising03').addClass('active');
+				$('#surprising03').show();
+				break;
+
+			case 'tactic1-2':
+				$('div.slide').removeClass('active');
+				$('div.slide').hide();
+				$('#surprising04').addClass('active');
+				$('#surprising04').show();
+				break;
+
+			case 'tactic1-3':
+				$('div.slide').removeClass('active');
+				$('div.slide').hide();
+				$('#surprising05').addClass('active');
+				$('#surprising05').show();
+				break;
+
+			case 'tactic1-4':
+				$('div.slide').removeClass('active');
+				$('div.slide').hide();
+				$('#surprising06').addClass('active');
+				$('#surprising06').show();
+				break;
+
+			case 'tactic2-1':
+				$('div.slide').removeClass('active');
+				$('div.slide').hide();
+				$('#surprising07').addClass('active');
+				$('#surprising07').show();
+				break;
+
+			case 'tactic2-2':
+				$('div.slide').removeClass('active');
+				$('div.slide').hide();
+				$('#surprising08').addClass('active');
+				$('#surprising08').show();
+				break;
+
+			case 'tactic2-3':
+				$('div.slide').removeClass('active');
+				$('div.slide').hide();
+				$('#surprising09').addClass('active');
+				$('#surprising09').show();
+				break;
+			
+			case 'tactic2-4':
+				$('div.slide').removeClass('active');
+				$('div.slide').hide();
+				$('#surprising10').addClass('active');
+				$('#surprising10').show();
+				break;
+
+			case 'conclusion':
+				$('div.slide').removeClass('active');
+				$('div.slide').hide();
+				$('#surprising11').addClass('active');
+				$('#surprising11').show();
+				break;
+
+		}
+		select_active_s();
+	}//end jumpto_s()
+
 
 </script>
 	
