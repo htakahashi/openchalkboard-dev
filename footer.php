@@ -1212,6 +1212,10 @@
 			event.preventDefault();
 			$('#btn-next-s').click();
 		});
+		$('.btn-unexpected-finish').click(function(event){
+			event.preventDefault();
+			$('#btn-next-s').click();
+		});
 
 
 		$('#unexpected-btn').click(function(event){
@@ -1231,6 +1235,16 @@
 
 			$('#surprising03').addClass('active');
 			$('#surprising03').show();
+
+		});
+
+		$('.btn-unexpected-restart').click(function(event){
+			event.preventDefault();
+			$('#surprising10').removeClass('active');
+			$('#surprising10').hide();
+
+			$('#surprising07').addClass('active');
+			$('#surprising07').show();
 
 		});
 
