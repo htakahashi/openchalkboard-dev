@@ -1545,7 +1545,7 @@ body#home #foot-rpt #foot-bkg {
         }
       }
     }//surprising05
-   
+
     #surprising06 {
       display: none;
 
@@ -1792,17 +1792,215 @@ body#home #foot-rpt #foot-bkg {
         button#concepts-btn:hover + div#yellow-circle-4 {
           display: block;
           background: url(img/yellowCircle.png) no-repeat;
+
+          &:after {
+            content: '';
+            clear: both;
+            display: block;
+          }
         }
       }
     }
 
     #surprising09 {
       display: none;
+      color: white;
+
+      div#surprising09-bkg {
+        display: block;
+        background: url(img/bkg-blue-shapes-bg.jpg) no-repeat;
+        height: 398px;
+        position: relative;
+
+        h2 {
+          font-size: 30px;
+          font-family: 'Sanchez';
+          text-align: center;
+          padding-top: 34px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+
+        h4 {
+          text-align: center;
+          margin: 17px;
+          letter-spacing: 1px;
+
+          span {
+            text-decoration: underline;
+          }
+        }
+
+        ul {
+          margin: 32px 0 0 47px;
+          position: relative;
+       
+          li.hover-area {
+            text-transform: uppercase;
+            font-family: 'bern_sans_ctregular';
+            font-size: 25px;
+            padding-bottom: 7px;
+            letter-spacing: 1px;
+            width: 230px;
+            cursor: pointer;
+
+            &:hover + .img-holder {
+              color: @navHover;
+              position: absolute;
+              display: block;
+              z-index: 20;
+            }
+          }
+
+          li.img-holder {
+            display: none;
+          }
+
+          li.teasers {
+            top: 7px;
+            left: 85px;
+          }
+
+          li.experiments {
+            top: 10px;
+            left: 125px;
+          }
+
+          li.interruptions {
+            top: 10px;
+            left: 141px;  
+          }
+
+          li.bizarre {
+            top: -8px;
+            left: 154px;
+          }
+
+          li.change-in-pace {
+            top: 3px;
+            left: 154px;
+          }
+
+          li.change-of-medium {
+            top: -10px;
+            left: 181px;
+          }
+
+          li.change-of-scenery {
+            top: -10px;
+            left: 181px;
+          }
+
+          li.devils-advocate {
+            top: -6px;
+            left: 217px;
+          }
+        }
+
+        .direction-arrow {
+          position: absolute;
+          width: 262px;
+          height: 114px;
+          top: 193px;
+          left: 365px;
+          background: url(img/arrow-dotted.png) no-repeat;
+          z-index: 10;
+        
+          p {
+            text-transform: uppercase;
+            color: @navHover;
+            font-size: 23px;
+            padding: 46px 0 0 44px;
+            font-family: 'bern_sans_ctregular';
+            letter-spacing: 1px;
+          }
+        }
+      }
     }
 
     #surprising10 {
       display: none;
-    }
+
+      h2 {
+        font-size: 30px;
+        font-family: 'Sanchez';
+        text-align: center;
+        padding-top: 34px;
+        color: white;
+      }
+
+      div#surprising10-bkg {
+        display: block;
+        background: url(img/bkg-blue-shapes-bg.jpg) no-repeat;
+        height: 398px;
+        position: relative;
+
+        a.example-cup {
+          display: block;
+          width: 251px;
+          height: 245px;
+          background: url(img/sprite-cup.png) no-repeat top;
+          position: absolute;
+          top: 118px;
+          left: 28px;
+        }
+
+        a.download-folder {
+          display: block;
+          width: 233px;
+          height: 193px;
+          background: url(img/sprite-folder.png) no-repeat top;
+          position: absolute;
+          top: 192px;
+          left: 253px;
+        }
+
+        a.research-folder {
+          display: block;
+          width: 130px;
+          height: 136px;
+          background: url(img/sprite-research.png) no-repeat top;
+          position: absolute;
+          top: 79px;
+          left: 346px;
+        }
+
+        a.think-tank {
+          display: block;
+          width: 130px;
+          height: 133px;
+          background: url(img/sprite-think-tank.png) no-repeat top;
+          position: absolute;
+          top: 108px;
+          left: 507px;
+        }
+
+        a.btn-tactic-1-mysteries-restart {
+          display: block;
+          width: 144px;
+          height: 67px;
+          background: url(img/btn-tactic-1-mysteries-restart.png) no-repeat top;
+          position: absolute;
+          top: 248px;
+          left: 507px;
+        }
+
+        a.btn-tactic-1-mysteries-finish {
+          display: block;
+          width: 145px;
+          height: 67px;
+          background: url(img/btn-tactic-1-mysteries-finish.png) no-repeat top;
+          position: absolute;
+          top: 305px;
+          left: 541px;
+        }
+
+        a:hover {
+          pointer: cursor;
+          background-position: bottom;
+        }
+      }
+    }//surprising10
 
     #surprising11 {
       display: none;
