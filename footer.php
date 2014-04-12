@@ -1136,8 +1136,8 @@
 					<a class="research-folder" href="#"></a>
 					<a class="think-tank" href="#"></a>
 
-					<a class="btn-tactic-1-mysteries-restart" href="#"></a>
-					<a class="btn-tactic-1-mysteries-finish" href="#"></a>
+					<a class="btn-unexpected-restart" href="#"></a>
+					<a class="btn-unexpected-finish" href="#"></a>
 				</div>
 			</div><!-- /#surprising10 -->
 
