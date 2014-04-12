@@ -979,7 +979,7 @@
 					<p class="title">how to teach with mystery</p>
 					<p class="subtitle">Every good mystery has a beginning, middle, &amp; end. One can form a full lesson.</p>
 					<p class="instruction">[ Click on the below steps ]</p>
-					<button id="btn-1" type="button" class="active">1</button>
+					<button id="btn-1" type="button">1</button>
 					<div class="caption-1 caption">
 						<h1 class="caption-header-text">STEP 1: Pose a compelling mystery related to the curriculum</h1>
 						<a class="caption-link" href="#">WHY DO THIS?</a>
@@ -1153,6 +1153,73 @@
 				$('a#btn-sub-menu-s-close').css("display", "none");
 			});
 		});
+
+		$('#mysteries-btn').click(function(event){
+			event.preventDefault();
+			$('#btn-next-s').click();
+		});
+		$('.btn-tactic-1-mysteries-finish').click(function(event){
+			event.preventDefault();
+			$('#btn-next-s').click();
+		});
+
+
+		$('#unexpected-btn').click(function(event){
+			event.preventDefault();
+			$('#surprising02').removeClass('active');
+			$('#surprising02').hide();
+
+			$('#surprising07').addClass('active');
+			$('#surprising07').show();
+
+		});
+
+		$('.btn-tactic-1-mysteries-restart').click(function(event){
+			event.preventDefault();
+			$('#surprising06').removeClass('active');
+			$('#surprising06').hide();
+
+			$('#surprising03').addClass('active');
+			$('#surprising03').show();
+
+		});
+
+		$('#surprising05-bkg button').click(function(event){
+			//console.log($(this).attr('id'));
+			event.preventDefault();
+
+			var current = $(this).attr('id');
+
+			$('div.caption').css("display", "none");
+			$('#surprising05-bkg button').css("color", "#ffffff");
+
+			if(current == 'btn-1'){
+				$('div.caption-1').css("display", "block");
+				$('#btn-1').css("color", "#ffc000");
+			}
+			if(current == 'btn-2'){
+				$('div.caption-2').css("display", "block");
+				$('#btn-2').css("color", "#ffc000");
+			}
+			if(current == 'btn-3'){
+				$('div.caption-3').css("display", "block");
+				$('#btn-3').css("color", "#ffc000");
+			}
+			if(current == 'btn-4'){
+				$('div.caption-4').css("display", "block");
+				$('#btn-4').css("color", "#ffc000");
+			}
+			if(current == 'btn-5'){
+				$('div.caption-5').css("display", "block");
+				$('#btn-5').css("color", "#ffc000");
+			}
+			if(current == 'btn-6'){
+				$('div.caption-6').css("display", "block");
+				$('#btn-6').css("color", "#ffc000");
+			}			
+
+		});
+
 	}//end initS()
 
 	function runGlow(){
