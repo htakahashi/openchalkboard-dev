@@ -18,7 +18,7 @@
 
 				  <div id="nav">
 					  <ul>
-						  <li><a href="#" id="nav-home" class="active">home</a></li>
+						  <li><a href="/" id="nav-home" class="active">home</a></li>
 						  <li><a href="#" id="nav-our-mission">our mission</a></li>
 						  <li><a href="#" id="nav-why-student-curiosity-is-key">why student curiosity is key</a></li>
 						  <li><a href="#" id="nav-research-behind-spark">research behind SPARK</a></li>
