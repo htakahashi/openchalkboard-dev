@@ -324,7 +324,7 @@
 							</li>
 							<li>
 								<div class="arrow-blue">
-									<p>check out all modules</p>
+									<a href="/all-modules/">check out all modules</a>
 								</div>
 							</li>
 						</ul>
@@ -334,7 +334,7 @@
 							</li>
 							<li>
 								<div class="arrow-blue">
-									<p>check out the think tank</p>
+									<a href="/think-tank/">check out the think tank</a>
 								</div>
 							</li>
 						</ul>
@@ -365,6 +365,22 @@
 <script type="text/javascript">
 	$(document).ready(init);
 
+	function launch_spark(){
+		console.log('close welcome');
+		//close the welcome module
+		$('#bkg-modal').hide();
+		$('#modal-welcome .slide').hide();
+		$('#modal-welcome .slide').removeClass('active');
+		$('#slide01').addClass('active');
+		$('#slide01').show();
+
+		$('#sub-menu a.step').removeClass('active');
+		$('a#step1').addClass('active');
+
+		//open Surprising Module
+		$('#bkg-modal-s').show();
+	}//launch_spark()
+
 	function init(){
 
 		$('#btn-get-started').click(modal_open);
@@ -375,6 +391,10 @@
 		$('#slide04 a.btn-submit-rating').click(slide_next);
 		$('#intro-checkboxes').on('click', herp);
 		$('#sub-menu a').on('click', jumpto);
+		$('div.button-holder').on("click", 'ul li#welcome-btn-surprising', launch_spark);
+		$('#slide05 a.btn-continue').click(slide_next);
+		$('#slide06 a.btn-submit-rating').click(slide_next);
+		$('#slide07 a.btn-continue').click(slide_next);
 
 		$('#nav-spark ul li a').mouseover(function(event){
 
@@ -476,7 +496,7 @@
 				width: 220
 			}, 500, function() {
 				// Animation complete.
-				console.log("slide complete");
+				// console.log("slide complete");
 				$('a#btn-sub-menu-close').css("display", "block");
 			});
 		});
@@ -497,28 +517,28 @@
 		});
 
 		//Slide 04
-		init_sliding_scale("#slider04");
+		init_sliding_scale("#slider04", 3);
 
 		//Slide 05
-		init_sliding_scale("#slider05");
+		init_sliding_scale("#slider05", 2);
 
 		//Slide 06
-		init_sliding_scale("#slider06");
+		init_sliding_scale("#slider06", 3);
 
 		//Slide 07
-		init_sliding_scale("#slider07");
+		init_sliding_scale("#slider07", 5);
 
 	}//init()
 
 	function modal_open(event){
 		event.preventDefault();
-		console.log('modal_open');
+		// console.log('modal_open');
 		$('#bkg-modal').show();
 	}//modal_open()
 
 	function modal_close(event){
 		event.preventDefault();
-		console.log('modal_close');
+		// console.log('modal_close');
 		$('#bkg-modal').hide();
 		$('#modal-welcome .slide').hide();
 		$('#modal-welcome .slide').removeClass('active');
@@ -532,10 +552,10 @@
 
 	function slide_back(event){
 		event.preventDefault();
-		console.log('slide_back');
+		// console.log('slide_back');
 
 		var current = $('#modal-welcome .slide.active');
-		console.log(current);
+		// console.log(current);
 		
 		if($(current).attr('id') == 'slide01'){
 			// console.log('slide01');
@@ -623,7 +643,7 @@
 
 	function slide_next(event){
 		event.preventDefault();
-		console.log('slide_next');
+		// console.log('slide_next');
 		
 		var current = $('#modal-welcome .slide.active');
 		
@@ -738,13 +758,13 @@
 	}//slide_next()
 
 	function select_active(){
-		console.log('select_active');
+		// console.log('select_active');
 
 		$('#sub-menu a.step').removeClass('active');
 
 		var current = $('#modal-welcome .slide.active');
 		var current_id = current.attr('id'); 
-		console.log(current_id);
+		// console.log(current_id);
 	
 		if(current_id == 'slide01'){
 			$('a#step1').addClass('active');
@@ -777,17 +797,17 @@
 
 	}//select_active()
 
-	function init_sliding_scale(myslider) {
-		console.log(myslider);
+	function init_sliding_scale(myslider, initial) {
+		// console.log(myslider);
 		var labelArr = new Array("THOROUGHLY NOT", "MOSTLY NOT", "SLIGHTLY NOT", "SLIGHTLY", "MOSTLY", "THOROUGHLY");
-		var initialValue=3, min=1, max=6;
+		var initialValue=initial, min=1, max=6;
 		$(myslider).slider({
 			value:initialValue,
 			min: min,
 			max: max,
 			step: 1,
 			slide: function( event, ui ) {
-				console.log(ui);
+				// console.log(ui);
 				$("#days").val( ui.value );
 				$("#label").text(labelArr[ui.value]);
 				$("#label").css("margin-left", (ui.value-min)/(max-min)*100+"%");
@@ -808,7 +828,7 @@
 		var cherp = $(this).parent();
 		var myData = cherp.serialize();
 		var derp = myData.split('&');
-		console.log(derp);
+		// console.log(derp);
 		var myButtons = [];
 		var s = 0;
 		var p = 0;
@@ -819,7 +839,7 @@
 
 		$.each(derp, function(index){
 			var skib = derp[index];
-			console.log(skib);
+			// console.log(skib);
 
 			switch(skib) {
 
@@ -855,11 +875,11 @@
 		});
 
 		if (s == 0) {
-			html += '<li>Suprising</li>';
+			html += '<li id="welcome-btn-surprising">Suprising</li>';
 		};
 
 		if (p == 0) {
-			html += '<li>personal</li>';
+			html += '<li>Personal</li>';
 		};
 
 		if (a == 0) {
@@ -882,7 +902,7 @@
 	function jumpto(event){
 		event.preventDefault();
 		var current = $(this).attr('id');
-		console.log(current);
+		// console.log(current);
 
 		switch(current){
 			case 'step1':
@@ -1082,10 +1102,10 @@
 
 					<h2>ADDITIONAL MYSTERY RESOURCES</h2>
 
-					<a class="example-cup" href="#"></a>
-					<a class="download-folder" href="#"></a>
-					<a class="research-folder" href="#"></a>
-					<a class="think-tank" href="#"></a>
+					<a class="example-cup" href="/mystery-examples/"></a>
+					<a class="download-folder" href="/mystery-cheat-sheet/"></a>
+					<a class="research-folder" href="/mystery-research/"></a>
+					<a class="think-tank" href="/mystery-think-tank/"></a>
 
 					<a class="btn-tactic-1-mysteries-restart" href="#"></a>
 					<a class="btn-tactic-1-mysteries-finish" href="#"></a>
@@ -1177,10 +1197,10 @@
 				<div id="surprising10-bkg">
 					<h2>MORE “THE UNEXPECTED” RESOURCES</h2>
 
-					<a class="example-cup" href="#"></a>
-					<a class="download-folder" href="#"></a>
-					<a class="research-folder" href="#"></a>
-					<a class="think-tank" href="#"></a>
+					<a class="example-cup" href="/unexpected-examples/"></a>
+					<a class="download-folder" href="/unexpected-cheat-sheet/"></a>
+					<a class="research-folder" href="/unexpected-research/"></a>
+					<a class="think-tank" href="/unexpected-think-tank/"></a>
 
 					<a class="btn-unexpected-restart" href="#"></a>
 					<a class="btn-unexpected-finish" href="#"></a>
@@ -1235,7 +1255,7 @@
 				width: 220
 			}, 500, function() {
 				// Animation complete.
-				console.log("slide complete");
+				// console.log("slide complete");
 				$('a#btn-sub-menu-s-close').css("display", "block");
 			});
 		});
@@ -1276,22 +1296,21 @@
 
 		$('.btn-tactic-1-mysteries-restart').click(function(event){
 			event.preventDefault();
-			$('#surprising06').removeClass('active');
-			$('#surprising06').hide();
-
-			$('#surprising03').addClass('active');
-			$('#surprising03').show();
-
-		});
-
-		$('.btn-unexpected-restart').click(function(event){
-			event.preventDefault();
 			$('#surprising10').removeClass('active');
 			$('#surprising10').hide();
 
 			$('#surprising07').addClass('active');
 			$('#surprising07').show();
 
+		});
+
+		$('.btn-unexpected-restart').click(function(event){
+			event.preventDefault();
+			$('#surprising06').removeClass('active');
+			$('#surprising06').hide();
+
+			$('#surprising03').addClass('active');
+			$('#surprising03').show();
 		});
 
 		$('#surprising05-bkg button').click(function(event){
@@ -1581,13 +1600,13 @@
 	}//slide_back_s()
 
 	function select_active_s(){
-		console.log('select_active_s');
+		// console.log('select_active_s');
 
 		$('#sub-menu-s a.step').removeClass('active');
 
 		var current = $('#module-content-s .slide.active');
 		var current_id = current.attr('id'); 
-		console.log(current_id);
+		// console.log(current_id);
 	
 		if(current_id == 'surprising01'){
 			$('a#briefing').addClass('active');
@@ -1637,7 +1656,7 @@
 	function jumpto_s(event){
 		event.preventDefault();
 		var current = $(this).attr('id');
-		console.log(current);
+		// console.log(current);
 
 		switch(current){
 			case 'briefing':
@@ -1713,7 +1732,6 @@
 		}
 		select_active_s();
 	}//end jumpto_s()
-
 
 </script>
 	
