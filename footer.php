@@ -1,67 +1,65 @@
-	  <div id="foot-rpt">
-	  	<div id="foot-bkg">
-		  	<div id="foot-content">
-		  		<ul id="nav-foot">
-		  			<li><a href="#">Quick Reference</a></li>
-		  			<li><a href="#">News</a></li>
-		  			<li><a href="#">Contact Us</a></li>
-		  		</ul>
+	<div id="foot-rpt">
+		<div id="foot-bkg">
+			<div id="foot-content">
+				<ul id="nav-foot">
+					<li><a href="#">Quick Reference</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
 
-			  	<ul id="social-media">
-			  		<li><a id="btn-twitter" href="#" title="Twitter">Twitter</a></li>
-			  		<li><a id="btn-facebook" href="#" title="Facebook">Facebook</a></li>
-			  		<li><a id="btn-email" href="#" title="Email">Email</a></li>
-			  	</ul>
-		  	</div><!-- /#foot-content -->
-	  	</div><!-- /#foot-bkg -->
-	  </div><!-- /#foot -->
+				<ul id="social-media">
+					<li><a id="btn-twitter" href="#" title="Twitter">Twitter</a></li>
+					<li><a id="btn-facebook" href="#" title="Facebook">Facebook</a></li>
+					<li><a id="btn-email" href="#" title="Email">Email</a></li>
+				</ul>
+			</div><!-- /#foot-content -->
+		</div><!-- /#foot-bkg -->
+	</div><!-- /#foot -->
 
-  </div><!-- /#wrapper -->
+</div><!-- /#wrapper -->
 
 <div id="bkg-modal">  
-  <div id="modal-welcome">
-  	<h2>Getting Started</h2>
-  	<a id="btn-close">Close</a>
-  	<a id="btn-previous">Previous</a>
-  	<a id="btn-next">Next</a>
-  	
-  	<div id="module-content">
-      
-      <a id="btn-sub-menu">STEPS</a>      
+	<div id="modal-welcome">
+	
+		<h2>Getting Started</h2>
+		<a id="btn-close">Close</a>
+		<a id="btn-previous">Previous</a>
+		<a id="btn-next">Next</a>
 
-      <div id="sub-menu">
-      	<a id="btn-sub-menu-close">STEPS</a>
-      	
-				<h3>Step 1:</h3>
-				<a id="step1" class="step overview-video active" href="#">Overview Video</a>
+		<div id="module-content">
 
-				<h3>Step 2:</h3>
-				<a id="step2" class="step" href="#">Explore Assumptions</a>
-				<!--<a class="step exercise" href="#">Exercise</a>-->
+			<a id="btn-sub-menu">STEPS</a>      
 
-				<h3>Step 3:</h3>
-				<a id="step3-1" class="step nomargin" href="#">Compare &amp; Contrast</a>
-				<!--<a class="step exercise" href="#">Exercise 1</a>-->
+			<div id="sub-menu">
+			<a id="btn-sub-menu-close">STEPS</a>
 
-				<a id="step3-2" class="step" href="#">Compare &amp; Contrast</a>
-				<!--<a class="step exercise" href="#">Exercise 2</a>-->
+			<h3>Step 1:</h3>
+			<a id="step1" class="step overview-video active" href="#">Overview Video</a>
 
-				<h3>Step 4:</h3>
-				<a id="step4" class="step" href="#">Identification</a>
-				<!--<a class="step exercise" href="#">Exercise</a>-->
+			<h3>Step 2:</h3>
+			<a id="step2" class="step" href="#">Explore Assumptions</a>
+			<!--<a class="step exercise" href="#">Exercise</a>-->
 
-				<h3>Step 5:</h3>
-				<a id="step5" class="step" href="#">Customized Areas<br/> for Focus</a>
+			<h3>Step 3:</h3>
+			<a id="step3-1" class="step nomargin" href="#">Compare &amp; Contrast</a>
+			<!--<a class="step exercise" href="#">Exercise 1</a>-->
 
-      </div><!-- /#sub-menu -->
+			<a id="step3-2" class="step" href="#">Compare &amp; Contrast</a>
+			<!--<a class="step exercise" href="#">Exercise 2</a>-->
 
-      <div id="slide01" class="slide active">
-      	<video width="707" poster="<?php bloginfo('stylesheet_directory');?>/img/poster-overview-video.png" controls>
-      	  <source src="<?php bloginfo('stylesheet_directory'); ?>/assets/Open.Chalkboard.Intro.Film.V1.webm" type="video/webm">
-      	  <source src="<?php bloginfo('stylesheet_directory'); ?>/assets/Open.Chalkboard.Intro.Film.V1.mp4" type="video/mp4">
-      	  <source src="<?php bloginfo('stylesheet_directory'); ?>/assets/Open.Chalkboard.Intro.Film.V1.f4v" type="video/f4v">
-      		This video is best viewed in Chrome.
-      	</video> 
+			<h3>Step 4:</h3>
+			<a id="step4" class="step" href="#">Identification</a>
+			<!--<a class="step exercise" href="#">Exercise</a>-->
+
+			<h3>Step 5:</h3>
+			<a id="step5" class="step" href="#">Customized Areas<br/> for Focus</a>
+
+		</div><!-- /#sub-menu -->
+
+			<div id="slide01" class="slide active">
+				<video width="707" poster="<?php bloginfo('stylesheet_directory');?>/img/poster-overview-video.png" controls>
+					<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/IntroVideo.mp4">
+				</video> 
 			</div><!-- /#slide01 -->
 
 			<div id="slide02" class="slide">
@@ -107,32 +105,18 @@
 			</div><!-- /#slide03 -->
 
 			<div id="slide04" class="slide">
-				<!--
-				<img src="<?php bloginfo('stylesheet_directory');?>/img/btnPlay.png" alt="" />
-				<div>
-					<p id="main-text">How engaging is this lesson?<br>(20 sec. clip)</p>
-				</div>
-				<img id="gray-btn" src="<?php bloginfo('stylesheet_directory');?>/img/btnGray.png" alt="" />
-				<p id="btn-txt">SUBMIT RATING</p>
-				<img id="slider-bkg" src="<?php bloginfo('stylesheet_directory');?>/img/sliderBkg.png" alt="" />
-
-				<div class="container">
-					<div id="slider"></div>
-				</div>
-				-->
 
 				<div class="container">
 					<div id="slider04"></div>
 				</div>
 
 				<video width="707" poster="<?php bloginfo('stylesheet_directory');?>/img/poster-non-example-video.png" controls>
-      	  <source src="<?php bloginfo('stylesheet_directory'); ?>/assets/Non-example.video.webm" type="video/webm">
-      	  <source src="<?php bloginfo('stylesheet_directory'); ?>/assets/Non-example.video.mp4" type="video/mp4">
-      	  <source src="<?php bloginfo('stylesheet_directory'); ?>/assets/Non-example.video.f4v" type="video/f4v">
-      		This video is best viewed in Chrome.
-      	</video>
+					<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/Non-example.video.webm" type="video/webm">
+					<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/Non-example.video.mp4" type="video/mp4">
+					<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/Non-example.video.f4v" type="video/f4v">
+				</video>
 
-      	<a class="btn-submit-rating" href="#">Submit Rating</a>
+				<a class="btn-submit-rating" href="#">Submit Rating</a>
 
 			</div><!-- /#slide04 -->
 
@@ -147,24 +131,6 @@
 					<a class="btn-continue" href="#">Continue to Exercise 3</a>
 				</div>
 
-				<!--
-				<img src="<?php bloginfo('stylesheet_directory');?>/img/btnPlayGray.png" alt="" />
-				<div>
-					<p id="main-text">How engaging is this lesson?<br>(20 sec. clip)</p>
-				</div>
-				<img id="slider-bkg" src="<?php bloginfo('stylesheet_directory');?>/img/sliderBkg.png" alt="" />
-
-				<div class="container">
-					<div id="slider"></div>
-				</div>
-
-		    <img id="blue-bar" src="<?php bloginfo('stylesheet_directory');?>/img/blueBar.png" alt="" />
-		    <p id="blue-bar-txt">FEEDBACK:</p>
-		    <p id="blue-bar-txt-sm">This teacher did not apply enagement techniques.<br>He averaged a “mostly not” from our team.</p>
-
-		    <img id="gray-btn" src="<?php bloginfo('stylesheet_directory');?>/img/btnGray.png" alt="" />
-		    <p id="btn-txt">CONTINUE TO EXERCISE 3</p>
-		    -->
 			</div><!-- /#slide05 -->
 
 			<div id="slide06" class="slide">
@@ -173,26 +139,11 @@
 				</div>
 
 				<video width="707" poster="<?php bloginfo('stylesheet_directory');?>/img/poster-example-video.png" controls>
-      	  <source src="<?php bloginfo('stylesheet_directory'); ?>/assets/Example_Video.webm" type="video/webm">
-      	  <source src="<?php bloginfo('stylesheet_directory'); ?>/assets/Example_Video.mp4" type="video/mp4">
-      	  <source src="<?php bloginfo('stylesheet_directory'); ?>/assets/Example_Video.f4v" type="video/f4v">
-      		This video is best viewed in Chrome.
-      	</video>
+					<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/UpdatedExampleFilm.mp4" type="video/mp4">
+				</video>
 
-      	<a class="btn-submit-rating" href="#">Submit Rating</a>
-      	<!--
-				<img src="<?php bloginfo('stylesheet_directory');?>/img/btnPlay.png" alt="" />
-				<div>
-					<p id="main-text">How about this one?<br>(20 sec. clip)</p>
-				</div>
-				<img id="gray-btn" src="<?php bloginfo('stylesheet_directory');?>/img/btnGray.png" alt="" />
-				<p id="btn-txt">SUBMIT RATING</p>
-				<img id="slider-bkg" src="<?php bloginfo('stylesheet_directory');?>/img/sliderBkg.png" alt="" />
-
-				<div class="container">
-					<div id="slider"></div>
-				</div>
-				-->
+				<a class="btn-submit-rating" href="#">Submit Rating</a>
+      	
 			</div><!-- /#slide06 -->
 
 			<div id="slide07" class="slide">
@@ -206,24 +157,6 @@
 					<a class="btn-continue" href="#">Continue to Exercise</a>
 				</div>
 
-				<!--
-				<img src="<?php bloginfo('stylesheet_directory');?>/img/btnPlayGray.png" alt="" />
-				<div>
-					<p id="main-text">How about this one?<br>(20 sec. clip)</p>
-				</div>
-				<img id="slider-bkg" src="<?php bloginfo('stylesheet_directory');?>/img/sliderBkg.png" alt="" />
-
-				<div class="container">
-					<div id="slider"></div>
-				</div>
-
-		    <img id="blue-bar" src="<?php bloginfo('stylesheet_directory');?>/img/blueBar.png" alt="" />
-		    <p id="blue-bar-txt">FEEDBACK:</p>
-		    <p id="blue-bar-txt-sm">This teacher applied multiple enagement techniques.<br>He averaged a “mostly” from our team.</p>
-
-		    <img id="gray-btn" src="<?php bloginfo('stylesheet_directory');?>/img/btnGray.png" alt="" />
-		    <p id="btn-txt">CONTINUE TO EXERCISE 3</p>
-		    -->
 			</div><!-- /#slide07 -->
 
 			<div id="slide-8" class="slide">
@@ -318,26 +251,26 @@
 				</div><!-- button-holder -->
 
 				<div class="bottom-bar">
-						<ul class="item-1">
-							<li>
-								<p>To get a comprehensive look at SPARK strategies.</p>
-							</li>
-							<li>
-								<div class="arrow-blue">
-									<a href="/all-modules/">check out all modules</a>
-								</div>
-							</li>
-						</ul>
-						<ul class="item-2">
-							<li>
-								<p>To brainstorm lesson ideas or share strategies.</p>
-							</li>
-							<li>
-								<div class="arrow-blue">
-									<a href="/think-tank/">check out the think tank</a>
-								</div>
-							</li>
-						</ul>
+					<ul class="item-1">
+						<li>
+							<p>To get a comprehensive look at SPARK strategies.</p>
+						</li>
+						<li>
+							<div class="arrow-blue">
+								<a href="/all-modules/">check out all modules</a>
+							</div>
+						</li>
+					</ul>
+					<ul class="item-2">
+						<li>
+							<p>To brainstorm lesson ideas or share strategies.</p>
+						</li>
+						<li>
+							<div class="arrow-blue">
+								<a href="/think-tank/">check out the think tank</a>
+							</div>
+						</li>
+					</ul>
 				</div><!-- bottom-bar -->
 			
 			</div><!-- module-9 -->
@@ -993,9 +926,7 @@
 	  
 			<div id="surprising01" class="slide active">
 				<video width="707" poster="<?php bloginfo('stylesheet_directory');?>/img/poster-surprising1.png" controls>
-					<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/surprising1.webm" type="video/webm">
 					<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/surprising1.mp4" type="video/mp4">
-					<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/surprising1.f4v" type="video/f4v">
 					This video is best viewed in Chrome.
 		      		</video> 
 			</div><!-- /#surprising01 -->
@@ -1010,9 +941,7 @@
 
 			<div id="surprising03" class="slide">
 			      <video width="707" poster="<?php bloginfo('stylesheet_directory');?>/img/poster-surprising2.png" controls>
-					<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/surprising2.webm" type="video/webm">
 					<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/surprising2.mp4" type="video/mp4">
-					<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/surprising2.f4v" type="video/f4v">
 					This video is best viewed in Chrome.
 			      </video> 
 			</div><!-- /#surprising03 -->
@@ -1115,9 +1044,7 @@
 
 			<div id="surprising07" class="slide">
 				<video width="707" poster="<?php bloginfo('stylesheet_directory');?>/img/poster-surprising3.png" controls>
-					<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/surprising3.webm" type="video/webm">
 					<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/surprising3.mp4" type="video/mp4">
-					<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/surprising3.f4v" type="video/f4v">
 					This video is best viewed in Chrome.
 		    </video>
 			</div><!-- /#surprising07 -->
@@ -1128,19 +1055,19 @@
 					
 					<button id="jolts-btn" type="button" class="active"></button>
 					<div id="yellow-circle-1">
-						<p id="body-jolts">I never thought I would get into European history, but Ms. Farr made it thrilling. Every day was full of surprises. Whether it we were debating decked out in costumes or using shaving cream to make Rococo sculptures, she had our full attention.”</br></br>&nbsp;&nbsp;-former student</p>
+						<p id="body-jolts">I never thought I would get into European history, but Ms. Farr made it thrilling. Every day was full of surprises. Whether it we were debating decked out in costumes or using shaving cream to make Rococo sculptures, she had our full attention.”<br/><br/>&nbsp;&nbsp;-former student</p>
 					</div>
 					<button id="increase-btn" type="button" class="active"></button>
 					<div id="yellow-circle-2">
-						<p id="body-increase">It’s hard to forget the surprising details she includes in her lessons. While the tidbits aren’t critical, they definitely serve as memory hooks for the important stuff. I took her class 10 years ago, and I remember lessons vividly.”</br></br>-former student</p>
+						<p id="body-increase">It’s hard to forget the surprising details she includes in her lessons. While the tidbits aren’t critical, they definitely serve as memory hooks for the important stuff. I took her class 10 years ago, and I remember lessons vividly.”<br/><br/>-former student</p>
 					</div>
 					<button id="accel-btn" type="button" class="active"></button>
 					<div id="yellow-circle-3">
-						<p id="body-accel">The whole class hangs on her every word, because you never know what crazy thing from history she is going to say next. Everyone was eager to learn. If someone was disruptive, the class would actually hush them. True story!”</br></br>-former student</p>
+						<p id="body-accel">The whole class hangs on her every word, because you never know what crazy thing from history she is going to say next. Everyone was eager to learn. If someone was disruptive, the class would actually hush them. True story!”<br/><br/>-former student</p>
 					</div>
 					<button id="concepts-btn" type="button" class="active"></button>
 					<div id="yellow-circle-4">
-						<p id="body-concepts">By incorporating the shocking details of history, Ms. Farr made the ancient relevent and resonating. She even created her own textbook jampacked with the fascinating. It gave the critical information sticky context."</br></br>-former student</p>
+						<p id="body-concepts">By incorporating the shocking details of history, Ms. Farr made the ancient relevent and resonating. She even created her own textbook jampacked with the fascinating. It gave the critical information sticky context."<br/><br/>-former student</p>
 					</div>
 				</div>
 			</div><!-- /#surprising08 -->
