@@ -33,8 +33,7 @@ if ( is_home() ) {
 	echo '<body id="home">';
 } else {
 	// This is not a homepage
-	echo '<body>';
-
+	echo '<body class="subpage">';
 }
 ?>
 

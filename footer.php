@@ -57,7 +57,7 @@
 		</div><!-- /#sub-menu -->
 
 			<div id="slide01" class="slide active">
-				<video width="707" poster="<?php bloginfo('stylesheet_directory');?>/img/poster-overview-video.png" controls>
+				<video width="707" poster="<?php bloginfo('stylesheet_directory');?>/img/poster-overview-video.png" controls preload="auto">
 					<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/IntroVideo.mp4">
 				</video> 
 			</div><!-- /#slide01 -->
@@ -110,10 +110,10 @@
 					<div id="slider04"></div>
 				</div>
 
-				<video width="707" poster="<?php bloginfo('stylesheet_directory');?>/img/poster-non-example-video.png" controls>
-					<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/Non-example.video.webm" type="video/webm">
-					<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/Non-example.video.mp4" type="video/mp4">
-					<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/Non-example.video.f4v" type="video/f4v">
+				<video width="707" poster="<?php bloginfo('stylesheet_directory');?>/img/poster-non-example-video.png" controls preload="none">
+					<!-- <source src="<?php bloginfo('stylesheet_directory'); ?>/assets/Non-example.video.webm" type="video/webm"> -->
+					<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/Non-example.Corrected.mp4" type="video/mp4">
+					<!-- <source src="<?php bloginfo('stylesheet_directory'); ?>/assets/Non-example.video.f4v" type="video/f4v"> -->
 				</video>
 
 				<a class="btn-submit-rating" href="#">Submit Rating</a>
@@ -138,7 +138,7 @@
 					<div id="slider06"></div>
 				</div>
 
-				<video width="707" poster="<?php bloginfo('stylesheet_directory');?>/img/poster-example-video.png" controls>
+				<video width="707" poster="<?php bloginfo('stylesheet_directory');?>/img/poster-example-video.png" controls preload="none">
 					<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/UpdatedExampleFilm.mp4" type="video/mp4">
 				</video>
 
@@ -257,7 +257,7 @@
 						</li>
 						<li>
 							<div class="arrow-blue">
-								<a href="/all-modules/">check out all modules</a>
+								<a id="btn-all-modules" href="#">check out all modules</a>
 							</div>
 						</li>
 					</ul>
@@ -318,6 +318,7 @@
 
 		$('#btn-get-started').click(modal_open);
 		$('#btn-close').click(modal_close);
+		$('#btn-all-modules').click(modal_close);
 		$('#btn-previous').click(slide_back);
 		$('#btn-next').click(slide_next);
 		$('.lessons a').click(slide_next);
@@ -925,7 +926,7 @@
 		      </div><!-- /#sub-menu-s -->
 	  
 			<div id="surprising01" class="slide active">
-				<video width="707" poster="<?php bloginfo('stylesheet_directory');?>/img/poster-surprising1.png" controls>
+				<video width="707" poster="<?php bloginfo('stylesheet_directory');?>/img/poster-surprising1.png" controls preload="auto">
 					<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/surprising1.mp4" type="video/mp4">
 					This video is best viewed in Chrome.
 		      		</video> 
@@ -940,7 +941,7 @@
 			</div><!-- /#surprising02 -->
 
 			<div id="surprising03" class="slide">
-			      <video width="707" poster="<?php bloginfo('stylesheet_directory');?>/img/poster-surprising2.png" controls>
+			      <video width="707" poster="<?php bloginfo('stylesheet_directory');?>/img/poster-surprising2.png" controls preload="none">
 					<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/surprising2.mp4" type="video/mp4">
 					This video is best viewed in Chrome.
 			      </video> 
@@ -1031,10 +1032,10 @@
 
 					<h2>ADDITIONAL MYSTERY RESOURCES</h2>
 
-					<a class="example-cup" href="/mystery-examples/"></a>
-					<a class="download-folder" href="/mystery-cheat-sheet/"></a>
-					<a class="research-folder" href="/mystery-research/"></a>
-					<a class="think-tank" href="/mystery-think-tank/"></a>
+					<a class="example-cup" href="/mystery-examples/" target="_blank"></a>
+					<a class="download-folder" href="<?php bloginfo('template_directory');?>/assets/MysteriesCheatSheet.pdf" download></a>
+					<a class="research-folder" href="/mystery-research/" target="_blank"></a>
+					<a class="think-tank" href="/mystery-think-tank/" target="_blank"></a>
 
 					<a class="btn-tactic-1-mysteries-restart" href="#"></a>
 					<a class="btn-tactic-1-mysteries-finish" href="#"></a>
@@ -1043,7 +1044,7 @@
 			</div><!-- /#surprising06 -->
 
 			<div id="surprising07" class="slide">
-				<video width="707" poster="<?php bloginfo('stylesheet_directory');?>/img/poster-surprising3.png" controls>
+				<video width="707" poster="<?php bloginfo('stylesheet_directory');?>/img/poster-surprising3.png" controls preload="none">
 					<source src="<?php bloginfo('stylesheet_directory'); ?>/assets/surprising3.mp4" type="video/mp4">
 					This video is best viewed in Chrome.
 		    </video>
@@ -1124,10 +1125,10 @@
 				<div id="surprising10-bkg">
 					<h2>MORE “THE UNEXPECTED” RESOURCES</h2>
 
-					<a class="example-cup" href="/unexpected-examples/"></a>
-					<a class="download-folder" href="/unexpected-cheat-sheet/"></a>
-					<a class="research-folder" href="/unexpected-research/"></a>
-					<a class="think-tank" href="/unexpected-think-tank/"></a>
+					<a class="example-cup" href="/unexpected-examples/" target="_blank"></a>
+					<a class="download-folder" href="<?php bloginfo('template_directory');?>/assets/TheUnexpectedCheatSheet.pdf" download></a>
+					<a class="research-folder" href="/unexpected-research/" target="_blank"></a>
+					<a class="think-tank" href="/unexpected-think-tank/" target="_blank"></a>
 
 					<a class="btn-unexpected-restart" href="#"></a>
 					<a class="btn-unexpected-finish" href="#"></a>
@@ -1223,8 +1224,10 @@
 
 		$('.btn-tactic-1-mysteries-restart').click(function(event){
 			event.preventDefault();
-			$('#surprising10').removeClass('active');
-			$('#surprising10').hide();
+			// $('#surprising10').removeClass('active');
+			// $('#surprising10').hide();
+			$('#surprising06').removeClass('active');
+			$('#surprising06').hide();
 
 			$('#surprising07').addClass('active');
 			$('#surprising07').show();
@@ -1233,8 +1236,11 @@
 
 		$('.btn-unexpected-restart').click(function(event){
 			event.preventDefault();
-			$('#surprising06').removeClass('active');
-			$('#surprising06').hide();
+			// $('#surprising06').removeClass('active');
+			// $('#surprising06').hide();
+
+			$('#surprising10').removeClass('active');
+			$('#surprising10').hide();
 
 			$('#surprising03').addClass('active');
 			$('#surprising03').show();
@@ -1659,6 +1665,17 @@
 		}
 		select_active_s();
 	}//end jumpto_s()
+
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50132136-1', 'openchalkboard.org');
+  ga('send', 'pageview');
 
 </script>
 	
