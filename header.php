@@ -17,7 +17,7 @@
 			
 		}
 		#foot-rpt #foot-bkg {
-			background: url(img/bkg-foot.png) no-repeat 0 0 transparent;
+			/*background: url(img/bkg-foot.png) no-repeat 0 0 transparent;*/
 		}
 	</style>
 	<?php
@@ -47,11 +47,11 @@ if ( is_home() ) {
 					<div id="nav">
 						<ul>
 							<li><a href="/" id="nav-home" class="active">home</a></li>
-							<li><a href="#" id="nav-our-mission">our mission</a></li>
-							<li><a href="#" id="nav-why-student-curiosity-is-key">why student curiosity is key</a></li>
-							<li><a href="#" id="nav-research-behind-spark">research behind SPARK</a></li>
-							<li><a href="#" id="nav-think-tank">think tank</a></li>
-							<li><a href="#" id="nav-blog">blog</a></li>
+							<li><a href="/our-mission/" id="nav-our-mission">our mission</a></li>
+							<li><a href="/why-student-curiosity-is-key/" id="nav-why-student-curiosity-is-key">why student curiosity is key</a></li>
+							<li><a href="/research-behind-spark/" id="nav-research-behind-spark">research behind SPARK</a></li>
+							<li><a href="/questions/categories/sabaidiscuss/" id="nav-think-tank">think tank</a></li>
+							<li><a href="/blog/" id="nav-blog">blog</a></li>
 						</ul>
 					</div><!-- /#nav -->
 				</div><!-- /#head-content -->

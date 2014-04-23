@@ -170,65 +170,65 @@
 						<ul>
 							<li>
 								<input type="checkbox" name="s" id="unexpected" />
-								<label for="unexpected">the unexpected</label>
+								<label for="unexpected" title="Incorporating startling elements to secure student attention.">the unexpected</label>
 							</li>
 							<li>							
 								<input type="checkbox" name="s" id="mysteries" />
-								<label for="mysteries">Mysteries</label>
+								<label for="mysteries" title="Framing lessons as thrilling puzzles to sustain student interest.">Mysteries</label>
 							<li>
-								<input type="checkbox" name="p" id="conflict" />
-								<label for="conflict">Conflict</label>
+								<input type="checkbox" name="s" id="conflict" />
+								<label for="conflict" title="Staging opposing perspectives to provoke rich engagement.">Conflict</label>
 							</li>
 							<li>
-								<input type="checkbox" name="r" id="experimentation" />
-								<label for="experimentation">experimentation</label>
+								<input type="checkbox" name="p" id="experimentation" />
+								<label for="experimentation" title="Empowering student discovery of concepts through trial and error.">experimentation</label>
 							<li>
 								<input type="checkbox" name="p" id="student-control" />
-								<label for="student-control">student control</label>
+								<label for="student-control" title="Inviting flexibility and customization in learning exercises. ">student control</label>
 							</li>
 						</ul>
 						<ul>
 							<li>
-								<input type="checkbox" name="r" id="relevancy" />
-								<label for="relevancy">relevancy</label>
+								<input type="checkbox" name="p" id="relevancy" />
+								<label for="relevancy" title="Fusing concepts to students’ current worlds.">relevancy</label>
 							</li>
 							<li>
-								<input type="checkbox" name="k" id="problem-solving" />
-								<label for="problem-solving">problem solving</label>
+								<input type="checkbox" name="a" id="problem-solving" />
+								<label for="problem-solving" title="Presenting elaborate challenges to stimulate critical thinking.">problem solving</label>
 							</li>
 							<li>
-								<input type="checkbox" name="k" id="game-based" />
-								<label for="game-based">game based</label>
+								<input type="checkbox" name="a" id="game-based" />
+								<label for="game-based" title="Integrating games to compel competitive mastery of concepts.">game based</label>
 							</li>
 							<li>
 								<input type="checkbox" name="a" id="project-centered" />
-								<label for="project-centered">project-centered</label>
+								<label for="project-centered" title="Facilitating long-term undertakings in real-world settings. ">project-centered</label>
 							</li>
 							<li>
-								<input type="checkbox" name="a" id="concreteness" />
-								<label for="concreteness">concreteness</label>
+								<input type="checkbox" name="r" id="concreteness" />
+								<label for="concreteness" title="Rendering abstract concepts tangible.">concreteness</label>
 							</li>
 						</ul>
 						<ul>
 							<li>
-								<input type="checkbox" name="p" id="emotion" />
-								<label for="emotion">emotion</label>
+								<input type="checkbox" name="r" id="emotion" />
+								<label for="emotion" title="Exploring natural reactions to concepts.">emotion</label>
 							</li>
 							<li>
 								<input type="checkbox" name="r" id="stories" />
-								<label for="stories">stories</label>
+								<label for="stories" title="Introducing concepts in narrative contexts.">stories</label>
 							</li>
 							<li>
 								<input type="checkbox" name="k" id="creativity" />
-								<label for="creativity">creativity</label>
+								<label for="creativity" title="Prompting innovative responses to concepts.">creativity</label>
 							</li>
 							<li>
 								<input type="checkbox" name="k" id="collaboration" />
-								<label for="collaboration">collaboration</label>
+								<label for="collaboration" title="Designing synergistic learning experiences.">collaboration</label>
 							</li>
 							<li>
 								<input type="checkbox" name="k" id="]activity" />
-								<label for="]activity">activity</label>
+								<label for="]activity" title="Championing the power of student demonstrations.">activity</label>
 							</li>
 						</ul>
 
@@ -337,18 +337,23 @@
 		
 			if($(current).attr('id') == 'btn-surprising'){
 				$('#btn-s').css('background-position', '0 bottom');
+				$('#btn-s').css('-webkit-filter', 'drop-shadow(0px 0px 75px rgba(237,191,0,1))');
 			}
 			if($(current).attr('id') == 'btn-personal'){
 				$('#btn-p').css('background-position', '0 bottom');
+				$('#btn-p').css('-webkit-filter', 'drop-shadow(0px 0px 75px rgba(237,191,0,1))');
 			}
 			if($(current).attr('id') == 'btn-anchored'){
 				$('#btn-a').css('background-position', '0 bottom');
+				$('#btn-a').css('-webkit-filter', 'drop-shadow(0px 0px 75px rgba(237,191,0,1))');
 			}
 			if($(current).attr('id') == 'btn-real'){
 				$('#btn-r').css('background-position', '0 bottom');
+				$('#btn-r').css('-webkit-filter', 'drop-shadow(0px 0px 75px rgba(237,191,0,1))');
 			}
 			if($(current).attr('id') == 'btn-kinetic'){
 				$('#btn-k').css('background-position', '0 bottom');
+				$('#btn-k').css('-webkit-filter', 'drop-shadow(0px 0px 75px rgba(237,191,0,1))');
 			}
 
 		});
@@ -356,22 +361,26 @@
 		$('#nav-spark ul li a').mouseout(function(event){
 
 			var current = $(this);
-			// console.log(current.attr('id'));
-		
+			
 			if($(current).attr('id') == 'btn-surprising'){
 				$('#btn-s').css('background-position', '0 top');
+				$('#btn-s').css('-webkit-filter', 'none');
 			}
 			if($(current).attr('id') == 'btn-personal'){
 				$('#btn-p').css('background-position', '0 top');
+				$('#btn-p').css('-webkit-filter', 'none');
 			}
 			if($(current).attr('id') == 'btn-anchored'){
 				$('#btn-a').css('background-position', '0 top');
+				$('#btn-a').css('-webkit-filter', 'none');
 			}
 			if($(current).attr('id') == 'btn-real'){
 				$('#btn-r').css('background-position', '0 top');
+				$('#btn-r').css('-webkit-filter', 'none');
 			}
 			if($(current).attr('id') == 'btn-kinetic'){
 				$('#btn-k').css('background-position', '0 top');
+				$('#btn-k').css('-webkit-filter', 'none');
 			}
 
 		});
@@ -452,12 +461,18 @@
 
 		//Slide 04
 		init_sliding_scale("#slider04", 3);
+		$('#slide04 video').click(function(){
+			$('#slide04 video').get(0).play();
+		});
 
 		//Slide 05
 		init_sliding_scale("#slider05", 2);
 
 		//Slide 06
 		init_sliding_scale("#slider06", 3);
+		$('#slide06 video').click(function(){
+			$('#slide06 video').get(0).play();
+		});
 
 		//Slide 07
 		init_sliding_scale("#slider07", 5);
@@ -1288,7 +1303,8 @@
 		var makeItGlow = $('.glow-box');
 
 		TweenMax.fromTo(makeItGlow, 0.7, {
-			boxShadow: "0px 0px 0px 0px rgba(255,192,0,0.3)"
+			boxShadow: "0px 0px 0px 0px rgba(255,192,0,0.3)",
+			rotation: 10
 		}, {
 			boxShadow: "0px 0px 80px 20px rgba(255,192,0,1)",
 			repeat: 5,
