@@ -39,6 +39,7 @@ Text Domain: openchalkboard
 @navHover: #ffc000;
 @footnav: #959595;
 
+
 // ************************************************
 // *
 // *  @Section: Mixins
@@ -224,6 +225,8 @@ body {
           margin-bottom: 7px;
           z-index: 10;
           position: relative;
+          -moz-transform: rotate(10deg);
+          -webkit-transform: rotate(10deg);
         }
       }
 
@@ -249,12 +252,16 @@ body {
           cursor: pointer;
           position: absolute;;
 
+          &:hover {
+            -webkit-filter: drop-shadow(0px 0px 75px rgba(237,191,0,1));
+            //filter: url(shadow.svg#drop-shadow);
+          }
           &#btn-s {
             width: 161px;
             height: 169px;
             background: url(img/lightbulb-s.png) no-repeat 0 0 transparent;
             &:hover {
-              background-position: 0 bottom;
+              background-position: 0 bottom;              
             }
           }
           &#btn-p {
@@ -741,7 +748,8 @@ body#home #foot-rpt #foot-bkg {
   text-decoration: none;
 }
 #bkg-modal #modal-welcome div#module-content #slide05 {
-  background: url(img/slide5gray.png) no-repeat 0 0 #000000;
+  //background: url(img/slide5gray.png) no-repeat 0 0 #000000;
+  background: @black;
 }
 #bkg-modal #modal-welcome div#module-content #slide05 .container {
   background: url(img/sliderBkg.png) no-repeat 0 0 #898989;
@@ -789,6 +797,7 @@ body#home #foot-rpt #foot-bkg {
   margin: -21px 0 0 466px;
   line-height: 31px;
   text-decoration: none;
+  letter-spacing: 1px;
 }
 #bkg-modal #modal-welcome div#module-content #slide05 .blue-box {
   background: #2e78a0;
@@ -857,7 +866,8 @@ body#home #foot-rpt #foot-bkg {
   text-decoration: none;
 }
 #bkg-modal #modal-welcome div#module-content #slide07 {
-  background: url(img/slide7gray.png) no-repeat 0 0 #000000;
+  // background: url(img/slide7gray.png) no-repeat 0 0 #000000;
+  background: @black;
 }
 #bkg-modal #modal-welcome div#module-content #slide07 .container {
   background: url(img/sliderBkg.png) no-repeat 0 0 #898989;
@@ -902,6 +912,7 @@ body#home #foot-rpt #foot-bkg {
   margin: -21px 0 0 466px;
   line-height: 31px;
   text-decoration: none;
+  letter-spacing: 1px;
 }
 #bkg-modal #modal-welcome div#module-content #slide07 .blue-box {
   background: #2e78a0;
@@ -954,6 +965,12 @@ body#home #foot-rpt #foot-bkg {
   font-family: 'bern_sans_ctregular', serif;
   margin-bottom: 30px;
   letter-spacing: 1px;
+}
+#bkg-modal #modal-welcome div#module-content #slide-8 .checkboxes ul li:after {
+  color: #ffc000;
+  content: "?";
+  vertical-align: top;
+  font-size: 12px;
 }
 #bkg-modal #modal-welcome div#module-content #slide-8 .checkboxes ul li input[type=checkbox] {
   position: absolute;
@@ -1156,7 +1173,8 @@ body#home #foot-rpt #foot-bkg {
 
     ul#progress-surprising {
       display: block;
-      margin: 15px 0 0 97px;
+      margin: 15px auto 0 auto;
+      text-align: center;
 
       li {
         font-family: 'bern_sans_ctregular', serif;
@@ -2268,5 +2286,14 @@ body#home #foot-rpt #foot-bkg {
 
   }//#module-content-s
 
-
 }//#bkg-modal-s
+
+// ************************************************
+// *
+// *  @Section: Sub Page Styles
+// *
+// ************************************************
+
+body.subpage #main-content-rpt #main-content-bkg #main-content {
+  padding-bottom: 28px;
+}
